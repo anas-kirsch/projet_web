@@ -1,0 +1,358 @@
+
+body{
+   
+    margin:0%;
+    background: rgb(81, 98, 114);
+    /* border: solid red 1px; */
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.tete{
+    min-height: 65vh;   
+    background-image: url(./public/basic.png);
+    background-repeat: no-repeat; /* Empêche la répétition */
+    background-size: cover; /* Ajuste l'image pour qu'elle soit entièrement visible */
+    background-position: center; /* Centre l'image dans le conteneur */
+    background-color: rgb(63, 45, 45);
+
+}
+
+
+
+
+/* 
+.alignement{
+  
+} */
+
+.top{
+    display: flex;
+    align-items: center;
+    gap: 12%;
+}
+
+.top-left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1% 0% 0% 21%;
+    
+}
+
+.top-right{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding: 0vh 0vh 0vh 17vh;
+}
+
+
+
+.logo-internet{
+    max-width: 25%;
+    color: white;
+}
+
+.name-enterprise{
+    min-width: 10%; 
+    color: white;
+    font-family: "roboto" ;
+    font-size: 150%;
+
+}
+
+
+#tel{
+    max-width: 13%;
+
+}
+
+.contact{
+    list-style-type: none;
+    max-width: 50%;
+    color: white;
+    text-align: right;
+    font-family: "roboto" ;
+    font-size: 150%;
+
+
+}
+
+
+#maps{
+    max-width: 12%;
+
+}   
+
+
+.localisation{
+    list-style-type: none;
+    max-width: 45%;
+    color: white;
+    text-align: right;
+    font-family: "roboto" ;
+    font-size: 150%;
+
+}
+
+
+.navigation{
+    display: flex;
+    gap: 5%;
+    list-style-type: none;
+    justify-content: center;
+    color: white;
+    font-family: "roboto" ;
+    font-size: 150%;
+    padding: 2% 0% 0% 0%;
+    /* border-top: 1px solid white; */
+
+}
+/* .navigation:hover{
+    transition: 1s;
+    color: rgb(105, 105, 139);
+} */
+
+.nav-experience{
+    border-top: 1px solid white;
+    border-top-width: 2px;
+   
+    padding-top: 5px;
+    
+}
+
+.nav-experience:hover{
+    transition: 1s;
+    border-color: gray;
+}
+
+
+
+.explore{
+    color: white;
+    text-align: center;
+    margin: 0%;
+    padding: 7% 0% 0% 0%;
+    font-family: "roboto" ; 
+}   
+
+h2 button {
+   
+    color: white;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 1s;
+}
+
+h2 button:hover{
+    transition: 1s;
+    transform: scale(1.4);    
+}
+
+.experience{
+  
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    width: 50%;
+    max-width: 1200px;
+    padding: 0 15px;
+    gap: 2px;
+    /* background-color: brown; */
+    height: 151px;
+}
+
+.service-categorie{
+
+    position: relative;
+    text-align: center;
+    height: 15rem;
+    top: -10vh;
+    padding: 20px;
+    color: white;
+    font-family: "roboto" ; 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    transition: 1s;
+}
+
+.service-categorie:hover{
+    transition: transform 1s;
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+
+.effect-logo-exception{
+    height: 6vh;
+
+}
+
+.effect-logo{
+    height: 5vh;
+}
+
+
+
+/* ////////////////////////////// */
+
+.website-div{
+
+    background-color: gray;
+    height: 35vh;
+    padding: 5vh 5VH 0vh 5vh;
+    margin: 0vh 10vh 5Vh 10vh ;
+    color: white;
+    font-family: "roboto";   
+
+}
+
+
+.Project-div{
+ 
+    background-color: gray;
+    height: 35vh;
+    padding: 5vh 5VH 0vh 5vh;
+    margin: 0vh 10vh 5Vh 10vh ;
+    color: white;
+    font-family: "roboto";   
+
+}
+
+
+.github-div{
+
+    
+    background-color: gray;
+    height: 35vh;
+    padding: 5vh 5VH 5vh 5vh;
+    margin: 0vh 0vh 5Vh 10vh ;
+    color: white;
+    font-family: "roboto";   
+
+
+}
+
+.Information-div{
+
+    background-color: gray;
+    height: 35vh;
+    padding: 5vh 5VH 5vh 5vh;
+    margin: 0vh 10vh 5Vh 10vh ;
+    color: white;
+    font-family: "roboto";   
+}
+
+
+
+.container-agencement{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+    
+
+
+
+/*footer de la page*/
+.footer-website{
+
+    background-color: rgb(53, 53, 68);
+    /* background-color: rgb(51, 51, 94); */
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% ;
+}
+
+/* zone 1 du footer pour la navigation */
+.footer-enterprise{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0vh 0vh 0vh 5vh; */
+    font-family: "roboto";   
+    color: white; 
+    border-right: 2px solid white;
+
+}
+
+/* style logo*/
+#logo-footer{
+    display: flex;
+    max-width: 20%;
+    padding: 1vh 1vh 0vh 0vh;
+    align-items: center;
+
+   
+}
+
+/* align logo with the name */
+.align-name-logo{
+
+    display: flex;
+}
+
+/*style for bottom nav*/
+.nav-footer{
+
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 2vh 0vh 0vh 0vh ;
+    padding: 0px 0px 1px 0px;
+    font-size: 25px;
+}
+
+/* in case of non use delete the class on html element(li)
+.navigation-bdp{
+    padding: 0px 0px 1px 0px;
+    font-size: 25px;
+
+} */    
+
+
+
+/*footer area2 for contact */
+.contact-footer{
+
+    font-family: "roboto";   
+    color: white; 
+    border-right: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/*align contact text*/
+.contact-align{
+    display: grid;
+    grid-template-rows: 25% 25% 50%;
+
+}
+
+
+.footer-area3{
+    
+
+}
