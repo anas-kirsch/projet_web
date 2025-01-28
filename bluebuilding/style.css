@@ -218,11 +218,10 @@ h2 button:hover{
 /* ////////////////////////////// */
 
 .website-div{
-    display: grid;
-    grid-template-columns: 10% 20% 20% 20% 20%;
+    
     gap: 25px;
     background-color: gray;
-    /* height: 35vh; */
+    height: 35vh;
     padding: 5vh 5VH 0vh 5vh;
     margin: 0vh 10vh 5Vh 10vh ;
     color: white;
@@ -231,7 +230,7 @@ h2 button:hover{
     box-shadow: 10px 10px 10px 1px rgba(53, 53, 53, 0.602);
 
 }
-
+/* 
 .website-div .case img {
     width: 33vh;
     display: flex;
@@ -251,7 +250,7 @@ h2 button:hover{
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
+} */
 
 
 .Project-div{
@@ -263,6 +262,8 @@ h2 button:hover{
     color: white;
     font-family: "roboto";   
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -324,7 +325,7 @@ h2 button:hover{
     height: 30vh;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    border-radius: 20px 0px 20px 0px;
+    /* border-radius: 20px 0px 20px 0px; */
 }
 
 /* zone 1 du footer pour la navigation */
@@ -420,6 +421,11 @@ h2 button:hover{
 }
 
 
+.footer-area3{
+    border-right: solid white 2px;
+
+}
+
 .footer-area3 P{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -435,4 +441,13 @@ h2 button:hover{
     justify-content: center;
     align-items: center;
     font-size: 25px;
+}
+
+
+.map{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
