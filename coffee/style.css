@@ -1,0 +1,344 @@
+body{
+    /* background-color: beige; */
+    background-color: 	rgb(242, 230, 217);
+
+    margin: 8vh;
+}
+
+.header-top{
+
+    display: grid ;
+    grid-template-columns: 20% 70% 10%; 
+    position: absolute;
+
+    justify-content: space-between;
+    /* position: sticky; */
+    align-items: center;
+    min-width:92%;
+    
+}
+
+
+
+#website-h1{
+    padding: 10px;
+    color: white;
+    display: flex;  
+    justify-content: center;
+    font-family: "roboto";
+
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    color: white;
+    list-style-type: none;
+    gap :80px;
+    font-family: "roboto";
+    cursor:pointer;
+    
+}
+
+#search{
+    height: 35px;
+}
+
+.hero-section{
+    height: 70vh;
+    background-image: url(./public/BaristaLatte-Canardcafe.jpg);
+    background-repeat: no-repeat; /* Empêche la répétition */
+    background-size: cover; /* Ajuste l'image pour qu'elle soit entièrement visible */
+    background-position: center; /* Centre l'image dans le conteneur*/
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+    padding: 0px 0px 0px 150px;
+}
+
+#hero-welcome{
+    font-size: 30px;
+    font-family: "roboto";
+    margin: 0px;
+
+}
+
+#hero-text{
+    font-size: 40px;
+    margin: 5px 0px 25px 0px;
+    font-family: "roboto";
+
+}
+
+#boutton-order{
+    border-radius: 30px;
+    padding: 9px;
+    cursor: pointer;
+    transition: 0,5s;
+    border: 2px solid white;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+#boutton-order:hover{
+    scale: 0.9;
+}
+
+
+
+.suite-categorie{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 150px 0px 150px;
+}
+
+.categorie1{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 40px 0px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: "roboto";
+    /* filter: grayscale(100%); */
+
+    
+}
+
+
+
+.shop{
+    background-color: white;
+    height: 90vh;
+    padding: 0px 0px 0px 0px;
+}
+
+.titre1-special-coffee{
+    font-size: 30px;
+    font-family: "roboto";
+    padding: 10px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.align-shop-item{
+    
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 20px;
+    padding: 0px 150px 0px 100px;
+}
+
+
+.article-shop{
+    height: 61vh;
+    background-color:rgb(248, 242, 236);
+    display: flex;
+    justify-content: center;
+    /* border: red 1px solid; */
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px 0px 30px;
+
+    border-radius: 15px;
+
+
+}
+
+.product{
+    height: 400px;
+    border-radius: 15px;
+}
+
+
+
+
+.product-name{
+    font-family: "roboto";
+    font-size: 25px;
+    margin: 10px 0px 0px 0px;
+
+}
+
+.product-description{
+    font-family: "roboto";
+    margin: 5px 0px 15px 0px;
+
+}
+
+
+
+.achat{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 0px 0px;
+}
+
+.price{
+    font-family: "roboto";
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px 0px 5px 0px;
+
+}
+
+.button-style{
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 0px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+
+/*--------------------------------------------------*/
+
+
+.container-explore-product{
+
+    height: 40vh;
+    /* background-color: 	rgb(242, 230, 217); */
+    
+    background-color: 	rgb(249, 242, 236);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(./public/Main.png);
+    background-repeat: no-repeat; /* Empêche la répétition */
+    background-size: cover; /* Ajuste l'image pour qu'elle soit entièrement visible */
+    background-position: center; /* Centre l'image dans le conteneur*/
+
+}
+
+.align-explore-product{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#check-product{
+    font-family: "roboto";
+    font-size: 50px;
+    margin-bottom: 15px;
+
+}
+
+#button-check{
+    border-radius: 35px;
+    background-color: black;
+    color: white;
+    font-family: "roboto";
+    padding: 20px 20px 20px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+/*-----------------------*/
+
+.reviews{
+    height: 50vh;
+    background-color: white;
+   
+   
+}
+
+.align-reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px 0px 0px;
+}
+
+.come-and-join{
+    font-size: 30px;
+    font-family: "Lily Script One";
+    margin: 0px 0px 0px 0px;
+}
+
+.happy-custom{
+    font-size: 30px;
+    font-family: "roboto";
+    margin: 15px 0px 0px 0px;
+    padding: 0px 0px 15px 0px;
+}
+
+
+/*-----------------------*/
+
+.section-newsletter{
+    height: 40vh;
+
+    background-image: url(./public/end.png);
+    background-repeat: no-repeat; /* Empêche la répétition */
+    background-size: cover; /* Ajuste l'image pour qu'elle soit entièrement visible */
+    background-position: center; /* Centre l'image dans le conteneur*/
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.title-newsletter{
+    font-size: 30px;
+    font-family: "roboto";
+    margin: 0px 0px 0px 0px;
+}
+
+.texte-newsletter{
+    font-size: 20px;
+    font-family: "roboto";
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 20px 0px;
+}   
+
+
+.align-input-button{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.input-email{
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    font-family: "roboto";
+    padding: 20px 100px 20px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.subscribe-newsletter{
+    border-radius: 35px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    font-family: "roboto";
+    padding: 20px 40px 20px 40px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+
