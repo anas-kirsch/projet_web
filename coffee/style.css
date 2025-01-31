@@ -7,21 +7,22 @@ body{
 
 .header-top{
 
-    display: grid ;
-    grid-template-columns: 20% 70% 10%; 
+    display: flex;
     position: absolute;
+    padding: 0px 0px 0px 0px;
 
     justify-content: space-between;
     /* position: sticky; */
     align-items: center;
-    min-width:92%;
+    min-width:81%;
+    
     
 }
 
 
 
 #website-h1{
-    padding: 10px;
+    padding: 10px 10px 10px 100px;
     color: white;
     display: flex;  
     justify-content: center;
@@ -40,9 +41,42 @@ body{
     
 }
 
+
+.burger-menu{
+    display: none;
+    text-align: center;
+    color: white;
+    position: absolute;
+    list-style-type: none;
+    font-family: "roboto";
+    font-size: 30px;
+    background-color: rgba(87, 61, 61, 0.87);
+    width: 99%;
+    left: 0%;
+    top: 135px;
+    height: 35vh;
+    line-height: 2;
+    padding: 10px 0px 0px 0px;
+    cursor: pointer;
+
+    
+    }
+
+.burger{
+    display: none;
+    font-size: 35px;   
+    background-color: transparent; 
+    border: none;
+    color: white;
+
+}
+
 #search{
     height: 35px;
+    padding: 0px 0px 0px 0px;
+    cursor: pointer;
 }
+
 
 .hero-section{
     height: 70vh;
@@ -116,6 +150,10 @@ body{
     background-color: white;
     height: 90vh;
     padding: 0px 0px 0px 0px;
+}
+
+.title-categorie-dessert{
+    margin: 0px 0px 40px 0px;
 }
 
 .titre1-special-coffee{
@@ -374,3 +412,84 @@ body{
     color: white;
     padding: 34px 0px 0px 0px;
 }
+
+
+
+
+
+
+
+
+
+
+
+/*media querie*/
+
+@media screen and (max-width :900px) {
+
+    
+.navigation{
+    display: none;
+    
+
+}
+
+.suite-categorie{
+    gap: 70px;
+    text-align: center;
+}
+
+.header-top{
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#website-h1{
+    padding: 10px 10px 10px 40pX;
+}
+
+#search{
+    position: relative;
+    right: 50px;
+}
+
+.burger-menu.active{
+    display: block;
+}
+
+.burger{
+    
+    display: block;
+    /* padding-left:100px ; */
+    cursor: pointer;
+    position: relative;
+    left: 140px;
+
+}
+
+.shop{
+
+    height: 140vh;
+}
+
+.align-shop-item{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    padding: 0px 30px 0px 20px;
+
+}
+
+.nav-footer{
+    display: grid;
+    grid-template-columns: 3fr 3fr auto;
+    padding: 5px 20px 0px 40px;
+    height: 50vh;
+}
+
+
+    
+}
+

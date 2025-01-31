@@ -25,9 +25,20 @@
             <li>ABOUT</li>
             <li>LOGIN</li>
         </div>
-            <div>
-                <img id="search" src="./public/icons8-loupe-50.png" alt="search">
-            </div>
+
+        <div class="burger-menu">
+            <li>HOME</li>
+            <li>COFFEE</li>
+            <li>BAKERY</li>
+            <li>SHOP</li>
+            <li>ABOUT</li>
+            <li>LOGIN</li>
+        </div>
+
+        <button class="burger"> X </button>
+        <div>
+            <img id="search" src="./public/icons8-loupe-50.png" alt="search">
+        </div>
     </header>
 
     <main>
@@ -66,7 +77,7 @@
         <section class="shop">
 
             <div class="titre1-special-coffee">
-                <h2 >OUR SPECIAL COFFEE</h2>
+                <h2  >OUR SPECIAL COFFEE</h2>
             </div>
 
 
@@ -145,7 +156,7 @@
         <section class="shop">
 
             <div class="titre1-special-coffee">
-                <h2>OUR SPECIAL DESSERT</h2>
+                <h2 class="title-categorie-dessert">OUR SPECIAL DESSERT</h2>
             </div>
 
 
@@ -296,4 +307,14 @@
     </footer>
         
 </body> 
+<script>
+    
+    const burger = document.querySelector(".burger");
+    const burgerMenu = document.querySelector('.burger-menu');
+
+    burger.addEventListener('click', () => {
+        burgerMenu.classList.toggle('active');
+    });
+    </script>
+
 </html>
