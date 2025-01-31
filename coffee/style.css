@@ -1,7 +1,7 @@
 body{
     /* background-color: beige; */
     background-color: 	rgb(242, 230, 217);
-
+    position: relative;
     margin: 8vh;
 }
 
@@ -10,11 +10,12 @@ body{
     display: flex;
     position: absolute;
     padding: 0px 0px 0px 0px;
+    top:0;
 
-    justify-content: space-between;
+    justify-content: space-around;
     /* position: sticky; */
     align-items: center;
-    min-width:81%;
+    min-width:100%;
     
     
 }
@@ -51,7 +52,7 @@ body{
     font-family: "roboto";
     font-size: 30px;
     background-color: rgba(87, 61, 61, 0.87);
-    width: 97%;
+    width: 100%;
     left: 0%;
     top: 135px;
     height: 35vh;
@@ -425,7 +426,7 @@ body{
 
 /*media querie*/
 
-@media screen and (max-width :900px) {
+@media screen and (max-width :1100px) {
 
     
 .navigation{
@@ -442,7 +443,6 @@ body{
 .header-top{
     
     display: flex;
-    justify-content: space-between;
 }
 
 #website-h1{
@@ -450,8 +450,8 @@ body{
 }
 
 #search{
-    position: relative;
-    right: 50px;
+    
+    padding: 0px 0px 0px 20px;
 }
 
 .burger-menu.active{
@@ -481,14 +481,26 @@ body{
 
 }
 
+#name-footer{
+    padding:50px 125px 0px 0px;;
+}
+
 .nav-footer{
     display: grid;
     grid-template-columns: 3fr 3fr auto;
-    padding: 5px 20px 0px 40px;
+    padding:5px 75px 0px 95px;
     height: 50vh;
 }
 
-
-    
 }
 
+
+
+
+
+
+@media screen and (max-width :600px){
+
+
+
+}
