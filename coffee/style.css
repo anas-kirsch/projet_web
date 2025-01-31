@@ -175,7 +175,7 @@ body{
 
 
 .article-shop{
-    height: 61vh;
+    height: 68vh;
     background-color:rgb(248, 242, 236);
     display: flex;
     justify-content: center;
@@ -473,12 +473,20 @@ body{
     height: 140vh;
 }
 
+.titre1-special-coffee{
+    margin: 0px 0px 0px 0px;
+}
+
 .align-shop-item{
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 10px;
     padding: 0px 30px 0px 20px;
 
+}
+
+.article-shop{
+    height: 61vh;
 }
 
 #name-footer{
@@ -499,8 +507,85 @@ body{
 
 
 
+
+
+
+@media screen and (max-width:800px){
+
+body{
+    margin: 4vh;
+} 
+
+.nav-footer{
+    padding: 5px 30px 0px 45px;
+}
+
+.article-shop{
+
+    height: 59vh;
+    padding: 15px 20px 0px 20px;
+}
+
+.title-categorie-dessert{
+    margin: 10px 0px 30px 0px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width :600px){
 
+body{
+    margin: 1vh;
+}
 
+.hero-section{
+    padding:0px 0px 0px 70px;
+
+}
+
+
+.header-top{
+
+    justify-content: flex-start;
+
+}
+
+.align-shop-item{
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 0px 10px;
+}
+
+.article-shop{
+
+    padding: 70px 20px 80px 20px;
+    margin-bottom: 10px;
+}
+
+
+.suite-categorie{
+    display: flex;
+    padding: 0px; 
+    gap: 0px;
+}
+
+.titre1-special-coffee{
+    font-size: 23px;
+
+}
+
+.title-categorie-dessert{
+    margin: 10px 0px 30px 0px;
+}
 
 }
