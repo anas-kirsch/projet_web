@@ -489,8 +489,14 @@ body{
     height: 61vh;
 }
 
+.align-div{
+    padding: 0px 40px 0px 0px
+}
+
 #name-footer{
-    padding:50px 125px 0px 0px;;
+    /* padding:50px 125px 0px 0px; */
+   
+    padding: 60px 50px 0px 0px;
 }
 
 .nav-footer{
@@ -548,16 +554,26 @@ body{
 }
 
 .hero-section{
-    padding:0px 0px 0px 70px;
+    padding:0px 0px 0px 60px;
 
 }
 
+.burger-menu.active{
+    min-height: 50vh;
+}
 
 .header-top{
 
     justify-content: flex-start;
 
 }
+
+.shop{
+    /* min-height: 300vh; */
+    min-height: 330vh;
+}
+
+
 
 .align-shop-item{
 
@@ -568,24 +584,88 @@ body{
 
 .article-shop{
 
-    padding: 70px 20px 80px 20px;
+    padding: 25px 20px 25px 20px;
     margin-bottom: 10px;
+    min-height: 70vh;
 }
 
 
 .suite-categorie{
-    display: flex;
+    /* display: flex; */
     padding: 0px; 
     gap: 0px;
 }
 
+
 .titre1-special-coffee{
-    font-size: 23px;
+    font-size: 20px;
 
 }
 
 .title-categorie-dessert{
     margin: 10px 0px 30px 0px;
+    font-size: 28px;
 }
+
+#check-product{
+    font-size: 30px;
+}
+
+.reviews{
+    min-height: 63vh;
+}
+
+.title-newsletter{
+    font-size: 25px;
+}
+
+.texte-newsletter{
+    font-size: 14px;
+}
+
+.align-input-button{
+    flex-direction: column;
+}
+
+#name-footer{
+
+    padding: 30px 15px 20px 0px;
+}
+
+
+.nav-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+
+
+
+}
+
+.titre-basdepage{
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+
+    
+}
+
+.style-mobile{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px 0px 30px 0px;
+
+}
+
+.social-media{
+    padding: 0px 0px 0px 0px;
+}
+
+
 
 }
