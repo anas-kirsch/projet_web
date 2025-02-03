@@ -1,27 +1,29 @@
 body{
     /* background-color: beige; */
     background-color: 	rgb(242, 230, 217);
-
+    position: relative;
     margin: 8vh;
 }
 
 .header-top{
 
-    display: grid ;
-    grid-template-columns: 20% 70% 10%; 
+    display: flex;
     position: absolute;
+    padding: 0px 0px 0px 0px;
+    top:0;
 
-    justify-content: space-between;
+    justify-content: space-around;
     /* position: sticky; */
     align-items: center;
-    min-width:92%;
+    min-width:100%;
+    
     
 }
 
 
 
 #website-h1{
-    padding: 10px;
+    padding: 10px 10px 10px 100px;
     color: white;
     display: flex;  
     justify-content: center;
@@ -40,9 +42,42 @@ body{
     
 }
 
+
+.burger-menu{
+    display: none;
+    text-align: center;
+    color: white;
+    position: absolute;
+    list-style-type: none;
+    font-family: "roboto";
+    font-size: 30px;
+    background-color: rgba(87, 61, 61, 0.87);
+    width: 100%;
+    left: 0%;
+    top: 135px;
+    height: 35vh;
+    line-height: 2;
+    padding: 10px 0px 0px 0px;
+    cursor: pointer;
+
+    
+    }
+
+.burger{
+    display: none;
+    font-size: 35px;   
+    background-color: transparent; 
+    border: none;
+    color: white;
+
+}
+
 #search{
     height: 35px;
+    padding: 0px 0px 0px 0px;
+    cursor: pointer;
 }
+
 
 .hero-section{
     height: 70vh;
@@ -118,6 +153,10 @@ body{
     padding: 0px 0px 0px 0px;
 }
 
+.title-categorie-dessert{
+    margin: 0px 0px 40px 0px;
+}
+
 .titre1-special-coffee{
     font-size: 30px;
     font-family: "roboto";
@@ -136,7 +175,7 @@ body{
 
 
 .article-shop{
-    height: 61vh;
+    height: 68vh;
     background-color:rgb(248, 242, 236);
     display: flex;
     justify-content: center;
@@ -373,4 +412,260 @@ body{
 .social-media{
     color: white;
     padding: 34px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*media querie*/
+
+@media screen and (max-width :1100px) {
+
+    
+.navigation{
+    display: none;
+    
+
+}
+
+.suite-categorie{
+    gap: 70px;
+    text-align: center;
+}
+
+.header-top{
+    
+    display: flex;
+}
+
+#website-h1{
+    padding: 10px 10px 10px 40pX;
+}
+
+#search{
+    
+    padding: 0px 0px 0px 20px;
+}
+
+.burger-menu.active{
+    display: block;
+}
+
+.burger{
+    
+    display: block;
+    /* padding-left:100px ; */
+    cursor: pointer;
+    position: relative;
+    left: 140px;
+
+}
+
+.shop{
+
+    height: 140vh;
+}
+
+.titre1-special-coffee{
+    margin: 0px 0px 0px 0px;
+}
+
+.align-shop-item{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    padding: 0px 30px 0px 20px;
+
+}
+
+.article-shop{
+    height: 61vh;
+}
+
+.align-div{
+    padding: 0px 40px 0px 0px
+}
+
+#name-footer{
+    /* padding:50px 125px 0px 0px; */
+   
+    padding: 60px 50px 0px 0px;
+}
+
+.nav-footer{
+    display: grid;
+    grid-template-columns: 3fr 3fr auto;
+    padding:5px 75px 0px 95px;
+    height: 50vh;
+}
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px){
+
+body{
+    margin: 4vh;
+} 
+
+.nav-footer{
+    padding: 5px 30px 0px 45px;
+}
+
+.article-shop{
+
+    height: 59vh;
+    padding: 15px 20px 0px 20px;
+}
+
+.title-categorie-dessert{
+    margin: 10px 0px 30px 0px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width :600px){
+
+body{
+    margin: 1vh;
+}
+
+.hero-section{
+    padding:0px 0px 0px 60px;
+
+}
+
+.burger-menu.active{
+    min-height: 50vh;
+}
+
+.header-top{
+
+    justify-content: flex-start;
+
+}
+
+.shop{
+    /* min-height: 300vh; */
+    min-height: 330vh;
+}
+
+
+
+.align-shop-item{
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 0px 10px;
+}
+
+.article-shop{
+
+    padding: 25px 20px 25px 20px;
+    margin-bottom: 10px;
+    min-height: 70vh;
+}
+
+
+.suite-categorie{
+    /* display: flex; */
+    padding: 0px; 
+    gap: 0px;
+}
+
+
+.titre1-special-coffee{
+    font-size: 20px;
+
+}
+
+.title-categorie-dessert{
+    margin: 10px 0px 30px 0px;
+    font-size: 28px;
+}
+
+#check-product{
+    font-size: 30px;
+}
+
+.reviews{
+    min-height: 63vh;
+}
+
+.title-newsletter{
+    font-size: 25px;
+}
+
+.texte-newsletter{
+    font-size: 14px;
+}
+
+.align-input-button{
+    flex-direction: column;
+}
+
+#name-footer{
+
+    padding: 30px 15px 20px 0px;
+}
+
+
+.nav-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+
+
+
+}
+
+.titre-basdepage{
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+
+    
+}
+
+.style-mobile{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px 0px 30px 0px;
+
+}
+
+.social-media{
+    padding: 0px 0px 0px 0px;
+}
+
+
+
 }

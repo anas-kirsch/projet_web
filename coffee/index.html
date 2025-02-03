@@ -14,9 +14,7 @@
 </head>
 <body>
     <header class="header-top">
-        <div>
-            <h1 id="website-h1">COFFEE</h1>
-        </div>
+        <h1 id="website-h1">COFFEE</h1>
         <div class="navigation">
             <li>HOME</li>
             <li>COFFEE</li>
@@ -25,9 +23,18 @@
             <li>ABOUT</li>
             <li>LOGIN</li>
         </div>
-            <div>
-                <img id="search" src="./public/icons8-loupe-50.png" alt="search">
-            </div>
+
+        <div class="burger-menu">
+            <li>HOME</li>
+            <li>COFFEE</li>
+            <li>BAKERY</li>
+            <li>SHOP</li>
+            <li>ABOUT</li>
+            <li>LOGIN</li>
+        </div>
+
+        <button class="burger"> X </button>
+        <img id="search" src="./public/icons8-loupe-50.png" alt="search">
     </header>
 
     <main>
@@ -145,7 +152,7 @@
         <section class="shop">
 
             <div class="titre1-special-coffee">
-                <h2>OUR SPECIAL DESSERT</h2>
+                <h2 class="title-categorie-dessert">OUR SPECIAL DESSERT</h2>
             </div>
 
 
@@ -204,7 +211,7 @@
                 <div class="article-shop">
                     <img class="product" src="./public/cake.jpg" alt="Australian Lamingtons">
                     <div>
-                        <h4 class="product-name">Australian Lamingtons</h4>
+                        <h4 class="product-name">Australian dessert</h4>
                         <p class="product-description">Lorem ipsum dolor sit amet consectetur</p>
                     </div>
 
@@ -258,35 +265,51 @@
             </div>
 
             <div class="align-div">
-                <h4>PRIVACY</h4>
-                <p>Terms of us</p>
-                <p> Privacy policy</p>
-                <p>Cookies</p>
+                <h4 class="titre-basdepage">PRIVACY</h4>
+                <div class="style-mobile">
+                    
+                    <p>Terms of us</p>
+                    <p> Privacy policy</p>
+                    <p>Cookies</p>
+
+                </div>
             </div>
 
             <div class="align-div">
-                <h4>SERVICES</h4>
-                <p>Shop</p>
-                <p>Lorem ipsum</p>
-                <p> Menu</p>
+                <h4 class="titre-basdepage">SERVICES</h4>
+                <div class="style-mobile">
+
+                    <p>Shop</p>
+                    <p>Lorem ipsum</p>
+                    <p> Menu</p>
+                
+                </div>
             </div>
 
             <div class="align-div">
-                <h4>ABOUT US</h4>
-                <p>Find a location</p>
-                <p>About us</p>
-                <p> Our story</p>
+                <h4 class="titre-basdepage">ABOUT US</h4>
+                <div class="style-mobile">
+
+                    <p>Find a location</p>
+                    <p>About us</p>
+                    <p> Our story</p>
+               
+                </div>
             </div>
             
             <div class="align-div">
-                <h4>INFORMATIONS</h4>
-                <p>Lorem ipsum</p>
-                <p>Sell your products</p>
-                <p> lorem</p>
+                <h4 class="titre-basdepage">INFORMATIONS</h4>
+                <div class="style-mobile">
+
+                    <p>Lorem ipsum</p>
+                    <p>Sell your products</p>
+                    <p> lorem</p>
+                
+                </div>
             </div>
 
             <div class="social-media">
-                <h4>SOCIAL MEDIA</h4>
+                <h4 class="titre-basdepage">SOCIAL MEDIA</h4>
                 <img src="./public/icons8-twitter-50.png" alt="x">
                 <img src="./public/icons8-facebook-50.png" alt="facebook">
                 <img src="./public/icons8-instagram-48.png" alt="instagram">
@@ -296,4 +319,14 @@
     </footer>
         
 </body> 
+<script>
+    
+    const burger = document.querySelector(".burger");
+    const burgerMenu = document.querySelector('.burger-menu');
+
+    burger.addEventListener('click', () => {
+        burgerMenu.classList.toggle('active');
+    });
+    </script>
+
 </html>
