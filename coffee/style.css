@@ -23,12 +23,12 @@ body{
 
 
 #website-h1{
-    padding: 10px 10px 10px 100px;
+    padding: 10px 10px 10px 10px;
     color: white;
     display: flex;  
     justify-content: center;
     font-family: "roboto";
-
+    
 }
 
 .navigation{
