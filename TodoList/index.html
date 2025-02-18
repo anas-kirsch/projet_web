@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>TodoList</title>
+</head>
+<body>
+
+    <header> 
+        <h1 class="titre1"> To-Do List </h1>
+        
+    </header>
+    
+    <main>
+        <section class="sectionRecherche">
+            <input class="barreDeRecherche" type="text" name="recherche" placeholder="rechercher une tache">
+            <button class="bouttonRecherche"> Entrer </button>
+        </section>
+      
+        <section class="ListTask">
+            
+        </section>
+
+        
+    </main>
+
+
+    <footer>
+        <img class="addListLogo" src="./public/icons8-add-50.png" alt="add List">
+    </footer>
+    
+   
+
+
+
+
+
+
+
+    <section class="sectionAddTask">
+
+        <div class="divInput-date">
+            <input class="TasknameInput" type="text" name="name" placeholder="  Task Name">
+            <p class="CreateDate">Lorem ipsum dolor, sit amet consectetur</p>
+        </div>
+
+        <div>
+                <textarea class="InputContent" placeholder=" Task content" name="text" >  </textarea>
+
+        </div>
+
+        <div>
+            <input class="InputTag" type="text" placeholder="   #Tag">
+        </div>
+
+        <div class="validTask"> 
+            <h2 class="texteValid">AJOUTER</h2>
+            
+            <img class="BouttonValidTask" src="./public/icons8-add-50.png" alt="validTask">
+            <i class="fa-solid fa-trash fa-2xl" style="color: #ffffff;"></i>
+        </div>
+
+
+    </section>
+ 
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
