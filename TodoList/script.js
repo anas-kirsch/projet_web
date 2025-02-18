@@ -27,7 +27,12 @@ const ValidTask = document.querySelector(".BouttonValidTask");
 
 
 
-const tabTasksList = [];
+let tabTasksList = recupTask();
+
+if(tabTasksList == null){
+    tabTasksList = [];
+}
+
 
 const tabTasksListJSON = JSON.stringify(tabTasksList);
 localStorage.setItem("LIST",tabTasksListJSON);
@@ -49,11 +54,11 @@ ValidTask.addEventListener('click',()=>{
 
     
 
-    
-    
+    recupTask();
+
     AddTask(saveTask);
 
-    // DataSave();
+    DataSave();
 
     
 });
@@ -72,33 +77,25 @@ function AddTask(saveTask){
 
 
 
-
-
-    // console.log(tabTasks);
-
-    // const saveTabTasks = JSON.stringify(tabTasks);
-
-    // console.log(saveTabTasks);
-    
-    // localStorage.setItem("LIST",saveTabTasks);
-
-
-
-    // const recupTabTasks = localStorage.getItem("LIST");
-
-    // if(recupTabTasks == null) return null;
-
-    // console.log(recupTabTasks);
-
-    // const Tasks = JSON.parse(recupTabTasks);
-    // Tasks.push(saveTask);
-
-    // localStorage.setItem("LIST",JSON.stringify(Tasks));
-
-
-
     return;
 }
+
+
+function recupTask(){
+
+    const recupContentList = localStorage.getItem("LIST");
+
+     if(recupContentList == null) return null;
+
+     const tasksFinaleList = JSON.parse(recupContentList);
+
+     return tasksFinaleList;
+
+
+
+
+}
+    
 
 
 
@@ -108,22 +105,22 @@ function DataSave(){
 
     sectionAddTask.classList.remove("active");
     
-    // const sectionListTask = document.querySelector(".ListTask");
-    // const nouvelleDivTask = document.createElement("div");
-    // sectionListTask.appendChild(nouvelleDivTask);
-    // const titleTask = document.createElement("p");
-    // nouvelleDivTask.appendChild(titleTask);
+    const sectionListTask = document.querySelector(".ListTask");
+    const nouvelleDivTask = document.createElement("div");
+    sectionListTask.appendChild(nouvelleDivTask);
+    const titleTask = document.createElement("p");
+    nouvelleDivTask.appendChild(titleTask);
 
 
-    // const CreateImgTaskFinished = document.createElement("img");
-    // const imageFinished = "./public/icons8-checked-50.png";
-    // CreateImgTaskFinished.setAttribute(imageFinished);
-    // const CreateImgTaskDelete = document.createElement("img");
-    // const imgDelete= "./public/icons8-delete-50.png";
-    // CreateImgTaskDelete.setAttribute(imgDelete);
+    const CreateImgTaskFinished = document.createElement("img");
+    const imageFinished = "./public/icons8-checked-50.png";
+    CreateImgTaskFinished.setAttribute("src",imageFinished);
+    const CreateImgTaskDelete = document.createElement("img");
+    const imgDelete= "./public/icons8-delete-50.png";
+    CreateImgTaskDelete.setAttribute("src",imgDelete);
 
-    // nouvelleDivTask.appendChild(CreateImgTaskFinished);
-    // nouvelleDivTask.appendChild(CreateImgTaskDelete);
+    nouvelleDivTask.appendChild(CreateImgTaskFinished);
+    nouvelleDivTask.appendChild(CreateImgTaskDelete);
 
   
 }
