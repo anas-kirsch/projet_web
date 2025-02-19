@@ -2,7 +2,7 @@ body{
     min-height: 90vh;
     background-color: rgb(223, 197, 126);
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 header{
@@ -14,13 +14,24 @@ header{
     align-items: center;
     border-radius: 20px;
     
+    position: fixed;
+    top: 0%;
+    width: 90%;
+    left: 2.5%;
 }
 
+.main{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    z-index: -1;
 
+}
 
 .titre1{
     color: white;
     font-family: "roboto";
+    
 
 }
 
@@ -30,6 +41,11 @@ header{
     background-color:  rgb(189, 167, 106) ;
     display: flex;
     justify-content: center;
+
+    position: sticky;
+    top: 15%;
+    width: 100%;
+    left: 0%;
 }
 
 .barreDeRecherche{
@@ -51,18 +67,60 @@ header{
 }
 
 .ListTask{
+    /* display: none; */
     height: 10vh;
     width: 100%;
     background-color:  rgb(189, 167, 106);
     margin: 10px 0px 10px 0px;
     border-radius: 20px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    opacity: 1;
 }
 
 
 
+.ListTask.active{
+    /* display: block; */
+    /* transition: 1s; */
+    opacity: 0;
+    
+}
 
+.div-align-task{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 50px;
 
+}
+
+.texte-Tasks-style{
+
+    color: white;
+    padding: 10px 20px 10px 10px;
+    margin: 0px 0px 0px 20px;
+    font-family: "roboto";
+    font-size: 20px;
+}
+
+.image-valide-delete{
+    padding: 0px 0px 0px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.fond-buttonadd{
+        background-color:  rgb(189, 167, 106);
+        height: 10vh;
+        width: 100%;
+        position: fixed;
+        left: 0%;
+        bottom: 0%;
+}
 
 .addListLogo{
     height:60px;
