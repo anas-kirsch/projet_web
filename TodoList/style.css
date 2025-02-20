@@ -1,13 +1,14 @@
 body{
     min-height: 90vh;
-    background-color: rgb(223, 197, 126);
+    background-color: #408000;
+    background-color: 	rgb(106, 202, 106);
     position: relative;
     overflow: scroll;
 }
 
 header{
     /* min-height: 10vh; */
-    background-color:  rgb(189, 167, 106) ;
+    background-color: 	rgb(130, 216, 130);
     margin: 10px ;
     display: flex;
     justify-content: center;
@@ -17,15 +18,16 @@ header{
     position: fixed;
     top: 0%;
     width: 90%;
+    height: 5vh;
     left: 2.5%;
 }
 
 .main{
     position: absolute;
-    top: 25%;
+    top: 20%;
     width: 100%;
     z-index: -1;
-
+    overflow: scroll;
 }
 
 .titre1{
@@ -37,13 +39,13 @@ header{
 
 .sectionRecherche{
     /* border-radius: 30px; */
-    min-height: 5vh;
-    background-color:  rgb(189, 167, 106) ;
+    min-height: 6vh;
+    background-color:		rgb(130, 216, 130);
     display: flex;
     justify-content: center;
 
     position: sticky;
-    top: 15%;
+    top: 8%;
     width: 100%;
     left: 0%;
 }
@@ -66,11 +68,17 @@ header{
 
 }
 
+.clear{
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
 .ListTask{
     /* display: none; */
     height: 10vh;
     width: 100%;
-    background-color:  rgb(189, 167, 106);
+    background-color: #00b300;
     margin: 10px 0px 10px 0px;
     border-radius: 20px;
     display: flex;
@@ -90,10 +98,13 @@ header{
 }
 
 .div-align-task{
-    display: flex;
+    /* display: flex;
     align-items: center;
     /* justify-content: center; */
-    height: 50px;
+    /* height: 50px;  */
+    position: absolute;
+    left: 10%;
+
 
 }
 
@@ -111,10 +122,12 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
+    position: absolute;
+    right: 5%;
 }
 
 .fond-buttonadd{
-        background-color:  rgb(189, 167, 106);
+        background-color:	rgb(130, 216, 130);
         height: 10vh;
         width: 100%;
         position: fixed;
@@ -141,10 +154,11 @@ header{
 
 .sectionAddTask{
     display: none;
-    min-height: 100%;
-    width: 100%;
+    height: 93%;
+    width: 96%;
     padding: 10px;
-    background-color: rgb(223, 197, 126);
+    /* background-color: rgb(223, 197, 126); */
+    background-color: #366e36;;
     padding: 30px 0px 0px 0px;
 
     /* display: flex;
@@ -160,8 +174,8 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 0px;
+    position: fixed;
+    top: 8px;
     z-index: 1000;
   
 
@@ -186,13 +200,11 @@ header{
     border-radius: 0px;
     border: none;
 
-
-
 }
 
 
 .CreateDate{
-    width: 80%;
+    width: 90%;
     height: 2vh ;
     color: grey;
     font-size: 15px;
@@ -206,9 +218,9 @@ header{
 .InputContent{
     width: 93%;
     position: absolute;
-    top: 13%;
+    top: 14%;
     left: 4%;
-    min-height: 52vh;
+    min-height: 45vh;
     border: none;
     background-color: beige;
     margin: 10px 0px 10px 0px;
@@ -242,7 +254,7 @@ header{
     align-items: center;
     gap: 8%;
     position: absolute;
-    bottom: 8%;
+    bottom: 5%;
     left: 17%;
 }
 
@@ -250,4 +262,12 @@ header{
     color: white;
     font-family: "roboto";
     letter-spacing: 4px ;
+}
+
+
+.CreateDate{
+
+    color: white;
+    font-family: "roboto";
+    padding: 0px 0px 0px 20px;
 }
