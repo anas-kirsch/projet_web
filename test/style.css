@@ -1,33 +1,25 @@
 body{
     min-height: 90vh;
-    /* background-color: #408000; */
-    /* background-color: orange; */
-    background-color: rgb(66, 66, 124);
-    
-
+    background-color: #408000;
+    background-color: 	rgb(106, 202, 106);
     position: relative;
-    /* overflow: scroll; */
-    z-index: -1;
+    overflow: scroll;
 }
-
-/* *{
-    box-sizing: border-box;
-} */
 
 header{
     /* min-height: 10vh; */
-    /* background-color: 	rgb(130, 216, 130); */
+    background-color: 	rgb(130, 216, 130);
     margin: 10px ;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    
     position: fixed;
     top: 0%;
     width: 90%;
     height: 5vh;
-    left: 3%;
-    gap: 20px;
+    left: 2.5%;
 }
 
 .main{
@@ -36,72 +28,57 @@ header{
     width: 100%;
     z-index: -1;
     overflow: scroll;
-    /* max-height: 40vh; */
 }
 
 .titre1{
     color: white;
     font-family: "roboto";
     
+
 }
 
 .sectionRecherche{
-    /* min-height: 6vh; */
+    /* border-radius: 30px; */
+    min-height: 6vh;
+    background-color:		rgb(130, 216, 130);
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 0px 0px 0px 20px  ;
-    position: fixed;
+    justify-content: center;
+
+    position: sticky;
     top: 8%;
     width: 100%;
     left: 0%;
-    gap: 5px;
 }
 
 .barreDeRecherche{
     margin: 5px;
-    height: 4vh;
-    border-radius: 10px;
-    padding: 0px 0px 0px 0px;
+    border-radius: 30px;
+    padding: 0px 0px 0px 10px;
     border: 1px solid black;
-    width: 50%;
-    outline: none;
+
 
 }
 
 .bouttonRecherche{
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: white;
     color: black;
     border: 1px solid black;
-    width: 5rem;
-    height: 4vh;
-
 
 }
 
-.sectionRecherche i{
-
-    font-size: 25px;
-}
-
-
-/* .clear{
+.clear{
   position: absolute;
   right: 10px;
-  top: 20px; 
+  top: 20px;
 }
-
-  */
-
 
 .ListTask{
     /* display: none; */
     height: 10vh;
     width: 100%;
-    /* background-color: #00b300; */
-    background-color: orange;
+    background-color: #00b300;
     margin: 10px 0px 10px 0px;
     border-radius: 20px;
     display: flex;
@@ -127,8 +104,8 @@ header{
     /* height: 50px;  */
     position: absolute;
     left: 10%;
-    display: flex;
-    align-items: center;
+
+
 }
 
 .texte-Tasks-style{
@@ -138,9 +115,6 @@ header{
     margin: 0px 0px 0px 20px;
     font-family: "roboto";
     font-size: 20px;
-    /* max-width: 100%;
-    word-wrap: break-word; */
-    
 }
 
 .image-valide-delete{
@@ -153,9 +127,7 @@ header{
 }
 
 .fond-buttonadd{
-        /* background-color:	rgb(130, 216, 130); */
-        background-color: orange;
-
+        background-color:	rgb(130, 216, 130);
         height: 10vh;
         width: 100%;
         position: fixed;
@@ -186,7 +158,7 @@ header{
     width: 96%;
     padding: 10px;
     /* background-color: rgb(223, 197, 126); */
-    background-color: rgb(66, 66, 124);
+    background-color: #00b300;;
     padding: 30px 0px 0px 0px;
 
     /* display: flex;
@@ -205,9 +177,6 @@ header{
     position: fixed;
     top: 8px;
     z-index: 1000;
-    left: 0px;
-    width: 100%;
-    height: 100%;
   
 
 
@@ -230,7 +199,8 @@ header{
     box-shadow: 3px 5px rgba(133, 133, 133, 0.322);
     border-radius: 0px;
     border: none;
-    position: absolute;
+
+
 
 }
 
@@ -250,9 +220,9 @@ header{
 .InputContent{
     width: 93%;
     position: absolute;
-    top: 14%;
+    top: 13%;
     left: 4%;
-    height: 45vh;
+    min-height: 52vh;
     border: none;
     background-color: beige;
     margin: 10px 0px 10px 0px;
@@ -267,7 +237,7 @@ header{
     position: absolute;
     bottom: 17%;
     left: 4%;
-    height: 3vh;
+    min-height: 3vh;
     border: none;
     background-color: beige;
     margin: 10px 0px 10px 0px;
@@ -286,7 +256,7 @@ header{
     align-items: center;
     gap: 8%;
     position: absolute;
-    bottom: 5%;
+    bottom: 8%;
     left: 17%;
 }
 
@@ -294,62 +264,4 @@ header{
     color: white;
     font-family: "roboto";
     letter-spacing: 4px ;
-}
-
-
-.CreateDate{
-
-    color: white;
-    font-family: "roboto";
-    padding: 0px 0px 0px 20px;
-}
-
-
-/* .container-List{
-    /* max-height: 40vh; */
-
-
-
-
-
-
-/*clique sur la div pour afficher le contenu dune tache*/
-
-
-.fa-chevron-down{
-    color: #42427c;
-    font-size: 30px;
-
-}
-
-
-.display-Task-Content{
-    display: none;
-    min-height: 15vh;
-    /* display: none; */
-    background-color: orange;
-    border-radius: 10px;
-    color: white;
-    font-family: "roboto";
-    padding: 10px 10px 10px 10px;
-
-}
-
-.display-Task-Content.active{
-
-    display: block;
-}
-
-.contenuDivTache{
-    color: white;
-    margin: 10px;
-    max-width: 100%;
-    word-wrap: break-word;
-     
-}
-
-
-.boutonDelete{
-
-    display: flex;
 }
