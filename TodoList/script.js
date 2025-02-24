@@ -5,6 +5,7 @@ function main(){
     
     const addTask = document.querySelector(".addListLogo");
     const sectionAddTask = document.querySelector(".sectionAddTask");
+
     addTask.addEventListener('click',()=>{
         
         sectionAddTask.classList.add("active");
@@ -67,9 +68,6 @@ function main(){
     });
 
 
-
-
-
     return;
 }
 
@@ -97,6 +95,7 @@ function AddTask(saveTask,sectionAddTask){
 
 
 
+
 function getAllTasks(){
         
         const recupContentList = localStorage.getItem("LIST");
@@ -120,7 +119,7 @@ function getAllTasks(){
         const containerList = document.querySelector(".container-List");
         containerList.innerHTML = "";
         
-        tasks.forEach(task => {
+        tasks.forEach((task,index) => {
             
             
             
@@ -204,41 +203,60 @@ function getAllTasks(){
             const NouvelleDivImage = document.createElement("div");
             NouvelleDivImage.classList.add("image-valide-delete");
             sectionNouvelleTache.appendChild(NouvelleDivImage);
-            
-            // ici creation balise image pour supprimer et valider un tache 
-            const CreateImgTaskFinished = document.createElement("img");
-            const CreateImgTaskDelete = document.createElement("img");
-            
-            // je met les deux src des images dans des variables
-            const imageFinished = "./public/icons8-checked-50.png";
-            const imgDelete= "./public/icons8-delete-50.png";
-            
-            // ici je defini donc les attributs des deux balises images 
-            CreateImgTaskFinished.setAttribute("src",imageFinished);
-            CreateImgTaskDelete.setAttribute("src",imgDelete);
-            
-            
-            // ici je place les deux balises images a leur parent divImage
-            NouvelleDivImage.appendChild(CreateImgTaskFinished);
-            NouvelleDivImage.appendChild(CreateImgTaskDelete);
-            
-            CreateImgTaskDelete.classList.add(".boutonDelete");
-            
-            // const buttonDelete = document.querySelector(".boutonDelete");
-            
-            CreateImgTaskDelete.addEventListener('click',()=>{
 
-                tasks.splice(0,1);
-                console.log(tasks);
-                console.log("aurevoir");
+        
+
+            const baliseValid = document.createElement("i");
+            const baliseDelete = document.createElement("i");
+            
+            baliseDelete.classList.add("fa-solid");
+            baliseDelete.classList.add("fa-circle-xmark");
+            // baliseDelete.classList.add("fa-lg");
+            baliseDelete.classList.add("fa-2x");
+
+
+            baliseValid.classList.add("fas");
+            baliseValid.classList.add("fa-check-circle");
+            // baliseValid.classList.add("fa-lg");
+            baliseValid.classList.add("fa-2x");
+            
+            // baliseDelete.classList.add("fa-2x1");
+
+            baliseValid.addEventListener('click',()=>{
+                
+                // console.log("bonjour")
+                baliseValid.classList.toggle("active");
+
+            })
+
+
+
+            NouvelleDivImage.appendChild(baliseValid);
+            NouvelleDivImage.appendChild(baliseDelete);
+
+
+
+            // CreateImgTaskDelete.classList.add(".boutonDelete");
+            
+            
+            baliseDelete.addEventListener('click',()=>{
+
+
+                tasks.splice(index,1);
+
+                const supSaveNewTabJSON = JSON.stringify(tasks);
+                localStorage.setItem("LIST",supSaveNewTabJSON);
+
+                location.reload();
+
 
                 
             });
-            
+
+
         });
 
     }
-
 
     
     
@@ -250,10 +268,13 @@ function getAllTasks(){
     function clearLocalStorage(){
         
         localStorage.clear();
+        location.reload();
+
     }
     
-    // getDate();
     
+
+
     function getDate(){
         
         const date = new Date();
@@ -266,17 +287,16 @@ function getAllTasks(){
         const annee = date.getFullYear();
         
         
-        // const toDate = heure + minute + jour + mois + annee;
-        // const toDate = String.prototype.concat(heure,minute,jour,mois,annee);
         
         const toDate = "Crée le : "+heure+":"+minute+"/"+jour+"."+moisAjour+"/"+annee+ "";
-        // console.log(toDate);
         
         
         return toDate;
         
         
     }
+
+
 
     function onScrollFunction(){
         const divcherche = document.querySelector(".sectionRecherche");
@@ -288,7 +308,6 @@ function getAllTasks(){
             
             console.log(divcherche.offsetTop);
             console.log(sectionTacheUnique[i].offsetTop);
-            // console.log(sectionTacheUnique)
 
         
             if(sectionTacheUnique[i].offsetTop< divcherche.offsetTop -140 ){
@@ -302,3 +321,17 @@ function getAllTasks(){
         }
 
     }
+
+
+
+
+// function valideTask(){
+//     const btnTaskFinished = document.querySelector(".fa-check-circle")
+
+//     btnTaskFinished.addEventListener('click',()=>{
+
+//         btnTaskFinished.classList.toggle("active");
+
+
+//     });
+// }

@@ -2,12 +2,17 @@ body{
     min-height: 90vh;
     /* background-color: #408000; */
     /* background-color: orange; */
-    background-color: rgb(66, 66, 124);
+    /* background-color: rgb(66, 66, 124); */
+    /* background-color: rgb(193, 221, 176); */
+    background-color: rgb(152, 189, 129);
+
     
 
     position: relative;
     /* overflow: scroll; */
     z-index: -1;
+    position: relative;
+
 }
 
 /* *{
@@ -29,6 +34,12 @@ header{
     left: 3%;
     gap: 20px;
 }
+
+
+
+
+
+
 
 .main{
     position: absolute;
@@ -102,6 +113,10 @@ header{
     width: 100%;
     /* background-color: #00b300; */
     background-color: orange;
+    background-color: rgb(185, 180, 169);
+    background-color: grey;
+
+
     margin: 10px 0px 10px 0px;
     border-radius: 20px;
     display: flex;
@@ -155,6 +170,9 @@ header{
 .fond-buttonadd{
         /* background-color:	rgb(130, 216, 130); */
         background-color: orange;
+        background-color: rgb(185, 180, 169);
+    background-color: grey;
+
 
         height: 10vh;
         width: 100%;
@@ -168,6 +186,7 @@ header{
     position: absolute;
     bottom: 5%;
     left: 40%;
+
 }
 
 
@@ -181,33 +200,42 @@ header{
 /* Ajout de tache section css*/
 
 .sectionAddTask{
-    display: none;
-    height: 93%;
-    width: 96%;
+    /* display: none; */
+    height:100%;
+    width: 100%;
     padding: 10px;
     /* background-color: rgb(223, 197, 126); */
     background-color: rgb(66, 66, 124);
+    background-color: grey;
+
     padding: 30px 0px 0px 0px;
+    transform: translateX(-110%);
+    transition: 0.5s;
 
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
+
     top: 0px;
-    z-index: 1000; */
+    z-index: 1000;
 
-}
-
-.sectionAddTask.active{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: 8px;
+
+}
+
+.sectionAddTask.active{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed; */
+    top: 0px;
     z-index: 1000;
     left: 0px;
     width: 100%;
     height: 100%;
+
+    transition: 0.5s;
+    transform: translateX(0%);
   
 
 
@@ -228,6 +256,7 @@ header{
     height: 4vh;
     background-color: beige;
     box-shadow: 3px 5px rgba(133, 133, 133, 0.322);
+
     border-radius: 0px;
     border: none;
     position: absolute;
@@ -318,16 +347,25 @@ header{
 
 .fa-chevron-down{
     color: #42427c;
+    color: rgb(193, 221, 176);
+    color: rgb(152, 189, 129);
+
+    
     font-size: 30px;
 
 }
 
 
 .display-Task-Content{
+    /* display: none; */
     display: none;
     min-height: 15vh;
-    /* display: none; */
     background-color: orange;
+    background-color: rgb(185, 180, 169);
+    background-color: grey;
+    transition: 1s;
+ 
+
     border-radius: 10px;
     color: white;
     font-family: "roboto";
@@ -338,6 +376,10 @@ header{
 .display-Task-Content.active{
 
     display: block;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .contenuDivTache{
@@ -352,4 +394,19 @@ header{
 .boutonDelete{
 
     display: flex;
+}
+
+
+.fa-circle-xmark{
+    color:#d32f3a ;
+
+}
+
+
+.fa-check-circle{
+    color: white;
+}
+
+.fa-check-circle.active{
+    color: #26a269;
 }
