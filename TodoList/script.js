@@ -1,6 +1,14 @@
 
 main();
 
+// function TaskBuilder(title,description,isValidate){
+//     const task = {
+//         title : 
+//     }
+
+//     return task;
+// }
+
 function main(){
     
     const addTask = document.querySelector(".addListLogo");
@@ -53,11 +61,13 @@ function main(){
 
     const saveTask = {
 
+
     titre:TasknameInput.value,
     date:balisePDate.textContent,
     content:TaskContentInput.value,
     tag:TaskTagInput.value
-
+    
+    
 
     };
 
@@ -186,6 +196,7 @@ function getAllTasks(){
 
                 console.log("bonjour")
                 divTacheContent.classList.toggle("active");
+                chevron.classList.toggle("active");
 
             })
 
@@ -220,23 +231,19 @@ function getAllTasks(){
             // baliseValid.classList.add("fa-lg");
             baliseValid.classList.add("fa-2x");
             
-            // baliseDelete.classList.add("fa-2x1");
-
+            
             baliseValid.addEventListener('click',()=>{
-                
-                // console.log("bonjour")
+
                 baliseValid.classList.toggle("active");
 
-            })
-
-
-
+                
+                
+            });
+            
+                
+                
             NouvelleDivImage.appendChild(baliseValid);
             NouvelleDivImage.appendChild(baliseDelete);
-
-
-
-            // CreateImgTaskDelete.classList.add(".boutonDelete");
             
             
             baliseDelete.addEventListener('click',()=>{
@@ -253,10 +260,11 @@ function getAllTasks(){
                 
             });
 
-
         });
 
     }
+
+
 
     
     
@@ -323,15 +331,3 @@ function getAllTasks(){
     }
 
 
-
-
-// function valideTask(){
-//     const btnTaskFinished = document.querySelector(".fa-check-circle")
-
-//     btnTaskFinished.addEventListener('click',()=>{
-
-//         btnTaskFinished.classList.toggle("active");
-
-
-//     });
-// }

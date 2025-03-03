@@ -352,8 +352,17 @@ header{
 
     
     font-size: 30px;
+    transition: 1s;
+
 
 }
+
+.fa-chevron-down.active{
+
+    rotate: 180deg;
+    transition: 0.5s;
+}
+
 
 
 .display-Task-Content{
