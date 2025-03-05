@@ -1,5 +1,7 @@
 import { getDate } from "../services/API/SaveDate.js"
- 
+
+
+
 export class Components{
 
     static boutton = {
@@ -57,9 +59,18 @@ export class Components{
             titre: this.form.TasknameInput.value,
             date:  getDate(),
             content: this.form.TaskContentInput.value,
-            tag: this.form.TaskTagInput.value        
+            tag: this.form.TaskTagInput.value,
         }
     
+    };
+
+    static getStatus = ()=> {   
+
+        return {
+
+            status : false,
+        }
+
     };
 
 }

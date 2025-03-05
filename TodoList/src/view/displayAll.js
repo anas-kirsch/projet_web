@@ -106,14 +106,43 @@ export class displayAll{
             
             
             
+
             // baliseValid.addEventListener('click',()=>{
 
-            //     baliseValid.classList.toggle("active");
+            //     if(Components.getStatus.status == false){
+            //         baliseValid.classList.add("active");
+            //         Components.getStatus.status = true;
+            //         let statusBtn = JSON.stringify(Components.getStatus().status);
+            //         localStorage.setItem("status",statusBtn);
+            //         console.log("cest active");
+            //     }
+            //     else{
+            //         baliseValid.classList.remove("active");
+            //         Components.getStatus.status = false;
+            //         let statusBtn2 = JSON.stringify(Components.getStatus().status);
+            //         localStorage.setItem("status",statusBtn2);
+            //         console.log("cest desactiver");
 
-                
-                
+            //     }
+
+
             // });
+                
         
+            // let recupStatus = localStorage.getItem("status");
+            // let statusEtat = JSON.parse(recupStatus);
+            // console.log(statusEtat);
+            
+            // if(statusEtat.status === true){
+            //     baliseValid.classList.add("active");
+            // }   
+            // else{
+            //     baliseValid.classList.remove("active");
+            // }
+
+
+
+
             
             baliseDelete.addEventListener('click',()=>{
 
@@ -133,3 +162,32 @@ export class displayAll{
 
 
 }
+
+
+ 
+
+
+   
+
+
+
+                                    
+            // baliseValid.addEventListener('click', () => {
+            //     const boutonAvalider = baliseValid.classList.toggle("active");
+            //     Components.status.status = boutonAvalider;
+            //     const statusBtn = JSON.stringify(Components.status);
+            //     localStorage.setItem("status", statusBtn);
+            //     console.log(boutonAvalider ? "cest active" : "cest desactiver");
+            // });
+
+            // const recupStatus = localStorage.getItem("status");
+            // if (recupStatus) {
+            //     const status = JSON.parse(recupStatus);
+            //     console.log(status);
+            //     if (status.status === true) {
+            //         baliseValid.classList.add("active");
+            //     } else {
+            //         baliseValid.classList.remove("active");
+            //     }
+            // }
+                        

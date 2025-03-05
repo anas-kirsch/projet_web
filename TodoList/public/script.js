@@ -35,7 +35,7 @@ function main(){
 
 
     Components.form.ValidTask.addEventListener('click',()=>{
-
+        
         Local.AddTask();
         display.displayMyTasks();
         console.log(Components.getNewTask());

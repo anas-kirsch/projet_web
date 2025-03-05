@@ -105,6 +105,11 @@ export class display{
             NouvelleDivImage.appendChild(baliseValid);
             NouvelleDivImage.appendChild(baliseDelete);
             
+
+
+
+
+
             const titreTache = Components.getNewTask().titre;
             
             baliseDelete.addEventListener('click',()=>{
@@ -115,7 +120,7 @@ export class display{
 
             });
     
-
+            
 
     }
 

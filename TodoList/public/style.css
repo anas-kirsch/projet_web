@@ -414,7 +414,9 @@ header{
 
 .fa-check-circle{
     color: white;
+    
 }
+
 
 .fa-check-circle.active{
     color: #26a269;
