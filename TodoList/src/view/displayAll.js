@@ -105,45 +105,7 @@ export class displayAll{
             NouvelleDivImage.appendChild(baliseDelete);
             
             
-            
-
-            // baliseValid.addEventListener('click',()=>{
-
-            //     if(Components.getStatus.status == false){
-            //         baliseValid.classList.add("active");
-            //         Components.getStatus.status = true;
-            //         let statusBtn = JSON.stringify(Components.getStatus().status);
-            //         localStorage.setItem("status",statusBtn);
-            //         console.log("cest active");
-            //     }
-            //     else{
-            //         baliseValid.classList.remove("active");
-            //         Components.getStatus.status = false;
-            //         let statusBtn2 = JSON.stringify(Components.getStatus().status);
-            //         localStorage.setItem("status",statusBtn2);
-            //         console.log("cest desactiver");
-
-            //     }
-
-
-            // });
-                
-        
-            // let recupStatus = localStorage.getItem("status");
-            // let statusEtat = JSON.parse(recupStatus);
-            // console.log(statusEtat);
-            
-            // if(statusEtat.status === true){
-            //     baliseValid.classList.add("active");
-            // }   
-            // else{
-            //     baliseValid.classList.remove("active");
-            // }
-
-
-
-
-            
+           
             baliseDelete.addEventListener('click',()=>{
 
 

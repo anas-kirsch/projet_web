@@ -60,17 +60,14 @@ export class Components{
             date:  getDate(),
             content: this.form.TaskContentInput.value,
             tag: this.form.TaskTagInput.value,
+            status : false,
+
         }
+
+
+        
     
     };
 
-    static getStatus = ()=> {   
-
-        return {
-
-            status : false,
-        }
-
-    };
 
 }
