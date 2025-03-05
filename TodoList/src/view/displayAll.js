@@ -1,15 +1,14 @@
 
 import { Components } from "../components/Components.js";
 import { Local } from "../services/dataBase/local.js";
-import { deleteView } from "./deleteTask.js";
 
-export class display{
+export class displayAll{
 
 
-    static displayMyTasks(){
+    static displayMyTasks(tasks){
+        tasks.forEach((task,index) => {
 
             
-            // console.log(task);
             //ici je recupere la section qui contient les sections de chaque ajoutée
             
             // ici je creer la section qui contient une seul tache ; 1 nouvelle tache = 1 nouvelle section comme celle ci
@@ -59,10 +58,10 @@ export class display{
             divTacheContent.appendChild(baliseTag);
             
             // faire le remplissage avce lobjet
-
-            baliseContent.textContent = Components.getNewTask().content;
-            baliseDate.textContent = Components.getNewTask().date;
-            baliseTag.textContent = Components.getNewTask().tag;
+            
+            baliseContent.textContent = task.content;
+            baliseDate.textContent = task.date;
+            baliseTag.textContent = task.tag;
 
 
             chevron.addEventListener('click',()=>{
@@ -78,7 +77,7 @@ export class display{
             // ici c'est la balise p qui contient le titre de la tache ajouter dans la div parente
             const titleTask = document.createElement("p");
             titleTask.classList.add("texte-Tasks-style");
-            titleTask.textContent = Components.getNewTask().titre;
+            titleTask.textContent = task.titre ;
             
             nouvelleDivTask.appendChild(titleTask);
             
@@ -105,18 +104,31 @@ export class display{
             NouvelleDivImage.appendChild(baliseValid);
             NouvelleDivImage.appendChild(baliseDelete);
             
-            const titreTache = Components.getNewTask().titre;
+            
+            
+            // baliseValid.addEventListener('click',()=>{
+
+            //     baliseValid.classList.toggle("active");
+
+                
+                
+            // });
+        
             
             baliseDelete.addEventListener('click',()=>{
 
-                sectionNouvelleTache.remove();
-                divTacheContent.remove();
-                deleteView.deleteViewOfTask(titreTache);
+
+                tasks.splice(index,1);
+
+                const supSaveNewTabJSON = JSON.stringify(tasks);
+                localStorage.setItem("LIST",supSaveNewTabJSON);
+
+                location.reload();
+
 
             });
-    
 
-
+        });
     }
 
 

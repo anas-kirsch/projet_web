@@ -266,11 +266,11 @@ header{
 
 .CreateDate{
     width: 90%;
-    height: 2vh ;
+    height: 2vh;
     color: grey;
     font-size: 15px;
     padding: 0px 0px 0px 10px;
-    margin: 10px 0px 0px 0px ;
+    margin: 50px 0px 0px 0px ;
 }
 
 
@@ -279,7 +279,7 @@ header{
 .InputContent{
     width: 93%;
     position: absolute;
-    top: 14%;
+    top: 17%;
     left: 4%;
     height: 45vh;
     border: none;

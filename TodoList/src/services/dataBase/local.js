@@ -1,6 +1,7 @@
 
 import { Components } from "../../components/Components.js"
 import { display } from "../../view/Display.js";
+import { getDate } from "../API/SaveDate.js";
 //a voir
 
 export class Local {
@@ -18,7 +19,7 @@ export class Local {
 
            
         localStorage.clear();
-        location.reload();
+        // location.reload();
 
     }
 
@@ -39,6 +40,8 @@ export class Local {
 
     static AddTask(){
 
+
+
         Components.form.sectionAddTask.classList.remove("active");
 
         const recupTabTasksList = localStorage.getItem("LIST");
@@ -46,10 +49,9 @@ export class Local {
         if(recupTabTasksList == null) return null;
 
         const tasks = JSON.parse(recupTabTasksList);
-        tasks.push(Components.saveTask);
-        console.log(Components.saveTask);
+        tasks.push(Components.getNewTask());
         localStorage.setItem("LIST",JSON.stringify(tasks));
-        
+
         
         return;
 
