@@ -21,6 +21,8 @@ export function rechercheDansLaBarre(){
         const maRecherche = Components.test().barreDeRechercheInput;
         // console.log(maRecherche);
         let trouveOuPas = false;
+        let tabTasksList = Local.getAllTasks();
+
 
         tabTasksList.forEach(tache => {
             if (maRecherche === tache.titre) {

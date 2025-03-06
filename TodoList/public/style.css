@@ -443,7 +443,7 @@ header{
 .fa-rotate-left{
     color: white;
     font-size: 30px;
-    position: absolute;
+    position: fixed;
     top: 14%;
     left: 10%;
     transition: 0.5s;

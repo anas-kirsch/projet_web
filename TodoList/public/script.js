@@ -7,7 +7,7 @@ import { onScrollFunction } from "../src/components/events/Scroll.js"
 import { Event } from "../src/components/events/Event.js"
 import { resetForm } from "../src/services/dataBase/resetformulaire.js"
 import { rechercheDansLaBarre } from "../src/services/dataBase/recherche.js"
-
+import { reloadTasks } from "../src/view/reloadTasks.js"
 
 main();
 
@@ -55,26 +55,14 @@ function main(){
 
     rechercheDansLaBarre();
     
-    Components.boutton.flecheretour.addEventListener('click',()=>{
-        tabTasksList.forEach(element => {
-            const sectionNouvelleTache = document.querySelectorAll(".ListTask");
-            const divTacheContent = document.querySelectorAll(".display-Task-Content");
+    Components.boutton.flecheretour.addEventListener('click',reloadTasks);
 
-            sectionNouvelleTache.forEach(element => {
-                element.remove();
-            });
-            divTacheContent.forEach(element => {
-                element.remove();
-            });
-        });
 
-        tabTasksList.forEach(element => {
-            display.displayMyTask(element);
-            
-        });
-    
-    }
-    );
+
+
+
+
+
 
     return;
 }

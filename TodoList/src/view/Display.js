@@ -177,8 +177,8 @@ export class display{
             divTacheContent.remove();
             Local.deleteAllTasks();
 
+            
 
-            //soit recuper div de chaque index soir mette locationreload
     });
 
 
