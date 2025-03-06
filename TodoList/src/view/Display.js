@@ -159,45 +159,7 @@ export class display{
             
         });
 
-        
-        
-             
-                
-                
-                
-                
-                
-                
-                
-
-    //     if(newTask.status == false){
-    //         baliseValid.classList.add("active");
-    //         Components.getStatus.status = true;
-            
-    //         console.log("cest active");
-    //     }
-    //     else{
-    //         baliseValid.classList.remove("active");
-    //         Components.getStatus.status = false;
-    //         let statusBtn2 = JSON.stringify(Components.getStatus().status);
-    //         localStorage.setItem("status",statusBtn2);
-    //         console.log("cest desactiver");
-    //     }
-
-
-    // let recupStatus = localStorage.getItem("status");
-    // let statusEtat = JSON.parse(recupStatus);
-    // // console.log(statusEtat);
-    
-    // if(statusEtat === true){
-    //     baliseValid.classList.add("active");
-    // }   
-    // else{
-    //     baliseValid.classList.remove("active");
-    // }
-//remove task
-
-
+   
             const titreTache = newTask.titre;
             
             baliseDelete.addEventListener('click',()=>{
@@ -207,20 +169,22 @@ export class display{
                 deleteView.deleteViewOfTask(titreTache);
 
             });
-    
+
             
+        Components.boutton.clearTrash.addEventListener('click', ()=> {
+            
+            sectionNouvelleTache.remove();
+            divTacheContent.remove();
+            Local.deleteAllTasks();
+
+
+            //soit recuper div de chaque index soir mette locationreload
+    });
+
 
     }
-
-    
-
-
 
 }
 
 
 
-
-// tabTasksList.forEach(task => {
-//     display.displayMyTask(task);
-// });

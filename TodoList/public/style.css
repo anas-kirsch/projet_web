@@ -182,9 +182,9 @@ header{
 }
 
 .addListLogo{
-    height:60px;
+    height:50px;
     position: absolute;
-    bottom: 5%;
+    bottom: 15%;
     left: 40%;
 
 }
@@ -420,4 +420,31 @@ header{
 
 .fa-check-circle.active{
     color: #26a269;
+}
+
+
+
+
+.messageRechercheIntrouvable{
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    font-family: "roboto";
+    font-size: 17px;
+    font-weight: bold;
+
+
+}
+
+
+.fa-rotate-left{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    transition: 0.5s;
 }

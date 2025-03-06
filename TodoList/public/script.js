@@ -6,9 +6,11 @@ import { display} from "../src/view/Display.js"
 import { onScrollFunction } from "../src/components/events/Scroll.js"
 import { Event } from "../src/components/events/Event.js"
 import { resetForm } from "../src/services/dataBase/resetformulaire.js"
-// import { displayAll } from "../src/view/displayAll.js"
+import { rechercheDansLaBarre } from "../src/services/dataBase/recherche.js"
+
 
 main();
+
 
 function main(){
     
@@ -20,10 +22,9 @@ function main(){
         console.log("le tableau vient d'etre creer");
     }
 
-    // displayAll.displayMyTasks(tabTasksList);
-
     tabTasksList.forEach(element => {
         display.displayMyTask(element);
+        
     });
     
     
@@ -42,26 +43,38 @@ function main(){
 
 
         Local.AddTask();
+        // location.reload();
         display.displayMyTask(Components.getNewTask());
         console.log(Components.getNewTask());
         
-        // location.reload();
         
 
         resetForm();
         
     });
 
+    rechercheDansLaBarre();
+    
+    Components.boutton.flecheretour.addEventListener('click',()=>{
+        tabTasksList.forEach(element => {
+            const sectionNouvelleTache = document.querySelectorAll(".ListTask");
+            const divTacheContent = document.querySelectorAll(".display-Task-Content");
 
+            sectionNouvelleTache.forEach(element => {
+                element.remove();
+            });
+            divTacheContent.forEach(element => {
+                element.remove();
+            });
+        });
 
-    Components.boutton.clearTrash.addEventListener('click', ()=> {
-        sectionNouvelleTache.remove();
-        divTacheContent.remove();
-        Local.deleteAllTasks();
-
-
-        //soit recuper div de chaque index soir mette locationreload
-    });
+        tabTasksList.forEach(element => {
+            display.displayMyTask(element);
+            
+        });
+    
+    }
+    );
 
     return;
 }

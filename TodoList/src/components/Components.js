@@ -8,9 +8,25 @@ export class Components{
 
         addTask : document.querySelector(".addListLogo"),
         clearTrash : document.querySelector(".clear"),//ok
-
-
+        search : document.querySelector(".bouttonRecherche"),
+        flecheretour: document.querySelector(".fa-rotate-left"),
     }
+
+    static input ={
+       
+        barreDeRecherche : document.querySelector(".barreDeRecherche"),        
+        contenuPasTrouve : document.querySelector(".contenuPasTrouve"),
+    };
+
+    static test = ()=>{
+
+        return {
+            barreDeRechercheInput : this.input.barreDeRecherche.value,
+
+        } 
+
+
+    };
 
     static form = {
 

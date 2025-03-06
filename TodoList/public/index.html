@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -20,14 +23,16 @@
         <img src="./image/icons8-reminders-50.png" alt="logo">
 
     </header>
-
-  
+    
+    
     <section class="sectionRecherche">
         <input class="barreDeRecherche" type="text" name="recherche" placeholder="  rechercher une tache">
         <button class="bouttonRecherche"> Entrer </button>
         <i class="clear fas fa-trash-alt fa-lg" style="color: #ffffff;"></i>
     </section>
-
+    <div class="contenuPasTrouve">
+        <i class="fa-solid fa-rotate-left" style="color: #ffffff;"></i>
+    </div>
 
     
     <main class="main">
@@ -40,7 +45,6 @@
 
 
     <footer class="fond-buttonadd">
-
         <img class="addListLogo" src="./image/icons8-add-50.png" alt="add List">
     </footer>
 
@@ -70,9 +74,6 @@
 
 
     </section>
- 
-
-
 
     
     <script type="module" src="script.js"></script>
