@@ -5,41 +5,62 @@ import { deleteView} from "../src/view/deleteTask.js"
 import { display} from "../src/view/Display.js" 
 import { onScrollFunction } from "../src/components/events/Scroll.js"
 import { Event } from "../src/components/events/Event.js"
-
+import { resetForm } from "../src/services/dataBase/resetformulaire.js"
+// import { displayAll } from "../src/view/displayAll.js"
 
 main();
 
 function main(){
     
 
+
     let tabTasksList = Local.getAllTasks();
     if(tabTasksList == null){
         tabTasksList = [];
-        console.log("le tableau vient d'etre creer")
+        console.log("le tableau vient d'etre creer");
     }
+
+    // displayAll.displayMyTasks(tabTasksList);
+
+    tabTasksList.forEach(element => {
+        display.displayMyTask(element);
+    });
     
+    
+    console.log(tabTasksList);
     const tabTasksListJSON = JSON.stringify(tabTasksList);
     localStorage.setItem("LIST",tabTasksListJSON);
     
-    display.displayMyTasks(tabTasksList);
+
     Event.cliqueAjouteUneTache();
     Event.cliqueNajoutePasUneTache();
     Event.FinaliseAjoutTache();
 
+
     Components.form.ValidTask.addEventListener('click',()=>{
         
+
+
         Local.AddTask();
-        location.reload();
+        display.displayMyTask(Components.getNewTask());
+        console.log(Components.getNewTask());
+        
+        // location.reload();
+        
+
+        resetForm();
         
     });
 
 
-       
-    
 
     Components.boutton.clearTrash.addEventListener('click', ()=> {
-
+        sectionNouvelleTache.remove();
+        divTacheContent.remove();
         Local.deleteAllTasks();
+
+
+        //soit recuper div de chaque index soir mette locationreload
     });
 
     return;
