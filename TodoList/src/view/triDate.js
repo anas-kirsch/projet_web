@@ -20,13 +20,19 @@ export function triDate(tabInverser){
                 return b.date - a.date;
     });
 
+    
     tabTasksList.forEach(element => {
         const sectionNouvelleTache = document.querySelectorAll(".ListTask");
         const divTacheContent = document.querySelectorAll(".display-Task-Content");
-    
-        Components.DisplayTask.containerList.innerHTML = "";
+
+        sectionNouvelleTache.forEach(element => {
+            element.remove();
         });
-    
+        divTacheContent.forEach(element => {
+            element.remove();
+        });
+    });
+
     
         tabInverser.forEach(element => {
             display.displayMyTask(element);

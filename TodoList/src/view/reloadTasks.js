@@ -8,23 +8,23 @@ export function reloadTasks(){
 
     let tabTasksList = Local.getAllTasks();
 
-    //ca 
+    // ca 
 
-    // tabTasksList.forEach(element => {
-    //     const sectionNouvelleTache = document.querySelectorAll(".ListTask");
-    //     const divTacheContent = document.querySelectorAll(".display-Task-Content");
+    tabTasksList.forEach(element => {
+        const sectionNouvelleTache = document.querySelectorAll(".ListTask");
+        const divTacheContent = document.querySelectorAll(".display-Task-Content");
 
-    //     sectionNouvelleTache.forEach(element => {
-    //         element.remove();
-    //     });
-    //     divTacheContent.forEach(element => {
-    //         element.remove();
-    //     });
-    // });
+        sectionNouvelleTache.forEach(element => {
+            element.remove();
+        });
+        divTacheContent.forEach(element => {
+            element.remove();
+        });
+    });
 
 
     //ou ca 
-    Components.DisplayTask.containerList.innerHTML = "";
+    // Components.DisplayTask.containerList.innerHTML = "";
 
 
 
