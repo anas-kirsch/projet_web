@@ -478,6 +478,17 @@ header{
 
 }
 
+.btn-tri-alphabet{
+    background-color: #91d38b;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    color: white;
+    font-family: "roboto";
+
+
+}
+
 .div-tri{
     display: grid;
     grid-template-columns: 10% 40% 40%;
