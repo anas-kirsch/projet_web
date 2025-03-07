@@ -8,6 +8,7 @@ import { Event } from "../src/components/events/Event.js"
 import { resetForm } from "../src/services/dataBase/resetformulaire.js"
 import { rechercheDansLaBarre } from "../src/services/dataBase/recherche.js"
 import { reloadTasks } from "../src/view/reloadTasks.js"
+import { triDate } from "../src/view/triDate.js"
 
 main();
 
@@ -28,7 +29,7 @@ function main(){
     });
     
     
-    console.log(tabTasksList);
+    // console.log(tabTasksList);
     const tabTasksListJSON = JSON.stringify(tabTasksList);
     localStorage.setItem("LIST",tabTasksListJSON);
     
@@ -58,7 +59,7 @@ function main(){
     Components.boutton.flecheretour.addEventListener('click',reloadTasks);
 
 
-
+    triDate();
 
 
 

@@ -10,7 +10,7 @@ export function rechercheDansLaBarre(){
      let tabTasksList = Local.getAllTasks();
     //  console.log(tabTasksList);
 
-    console.log("bienvenue dans la recherche");
+    // console.log("bienvenue dans la recherche");
     const balisePasTrouve = document.createElement("p");
     Components.input.contenuPasTrouve.appendChild(balisePasTrouve);
     balisePasTrouve.classList.add("messageRechercheIntrouvable");
@@ -30,6 +30,7 @@ export function rechercheDansLaBarre(){
                 resetrecherche();
                 trouveOuPas = true;
 
+
                 const sectionNouvelleTache = document.querySelectorAll(".ListTask");
                 const divTacheContent = document.querySelectorAll(".display-Task-Content");
 
@@ -42,6 +43,8 @@ export function rechercheDansLaBarre(){
 
                 balisePasTrouve.textContent = "Recherche " + tache.titre + " trouvée";
                 display.displayMyTask(tache);
+                
+
             }
         });
 

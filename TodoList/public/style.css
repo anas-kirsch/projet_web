@@ -43,7 +43,7 @@ header{
 
 .main{
     position: absolute;
-    top: 20%;
+    top: 23%;
     width: 100%;
     z-index: -1;
     overflow: scroll;
@@ -428,23 +428,61 @@ header{
 .messageRechercheIntrouvable{
     color: white;
     display: flex;
+    align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 12%;
-    left: 20%;
+
     font-family: "roboto";
     font-size: 17px;
     font-weight: bold;
+
+    margin: 5px 0px 0px 0px;
+
+}
+
+
+.fa-arrow-left{
+    color: white;
+    font-size: 30px;
+    padding: 0px 5px 0px 10px;
+}
+
+.contenuPasTrouve{
+    background-color: rgb(92, 170, 89);
+    height: 5vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: flex-start; */
+    margin: 0px 0px 0px 20px;
+    position: fixed;
+    top: 15%;
+    width: 90%;
+    left: 0%;
+    border-radius: 15px;
+    /* align-items: center; */
+
+    display: flex;
+    flex-direction: column;
 
 
 }
 
 
-.fa-rotate-left{
+.btn-tri{
+    background-color: #91d38b;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
     color: white;
-    font-size: 30px;
-    position: fixed;
-    top: 14%;
-    left: 10%;
-    transition: 0.5s;
+    font-family: "roboto";
+
+
+}
+
+.div-tri{
+    display: grid;
+    grid-template-columns: 10% 40% 40%;
+    gap: 10px;
+    /* justify-content: center; */
+    align-items: center;
+    height: 5vh;
 }

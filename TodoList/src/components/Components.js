@@ -1,5 +1,5 @@
 import { getDate } from "../services/API/SaveDate.js"
-
+import { reloadTasks } from "../view/reloadTasks.js";
 
 
 export class Components{
@@ -9,7 +9,8 @@ export class Components{
         addTask : document.querySelector(".addListLogo"),
         clearTrash : document.querySelector(".clear"),//ok
         search : document.querySelector(".bouttonRecherche"),
-        flecheretour: document.querySelector(".fa-rotate-left"),
+        flecheretour: document.querySelector(".fa-arrow-left"),
+        bouttontri : document.querySelector(".btn-tri")
     }
 
     static input ={
