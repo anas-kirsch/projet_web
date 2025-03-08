@@ -7,7 +7,7 @@ export function triDate(tabInverser){
 
     Components.boutton.bouttontri.addEventListener('click',()=>{
 
-
+        Components.boutton.bouttontri.classList.add("active")
         
         let tabTasksList = Local.getAllTasks();
 
@@ -20,7 +20,7 @@ export function triDate(tabInverser){
                 return b.date - a.date;
     });
 
-    
+
     tabTasksList.forEach(element => {
         const sectionNouvelleTache = document.querySelectorAll(".ListTask");
         const divTacheContent = document.querySelectorAll(".display-Task-Content");
@@ -38,8 +38,9 @@ export function triDate(tabInverser){
             display.displayMyTask(element);
             const balisePasTrouve = document.querySelector(".messageRechercheIntrouvable");
             balisePasTrouve.textContent = "";
-        });
 
+        });
+        
 });
     
 }

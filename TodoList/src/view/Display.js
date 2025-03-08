@@ -59,11 +59,13 @@ export class display{
             divTacheContent.appendChild(baliseDate);
             divTacheContent.appendChild(baliseTag);
             
-            // faire le remplissage avce lobjet
 
+            const dateAfficher = new Date(newTask.date);
+            const dateLisible = dateAfficher.toLocaleString('fr-FR');
+            console.log(dateLisible);
 
             baliseContent.textContent = newTask.content;
-            baliseDate.textContent = newTask.date;
+            baliseDate.textContent = dateLisible;
             baliseTag.textContent = newTask.tag;
 
 

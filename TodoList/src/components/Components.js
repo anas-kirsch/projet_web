@@ -7,7 +7,7 @@ export class Components{
     static boutton = {
 
         addTask : document.querySelector(".addListLogo"),
-        clearTrash : document.querySelector(".clear"),//ok
+        clearTrash : document.querySelector(".bin-button"),
         search : document.querySelector(".bouttonRecherche"),
         flecheretour: document.querySelector(".fa-arrow-left"),
         bouttontri : document.querySelector(".btn-tri")
@@ -36,7 +36,7 @@ export class Components{
         TasknameInput : document.querySelector(".TasknameInput"),
         TaskContentInput : document.querySelector(".InputContent"),
         TaskTagInput : document.querySelector(".InputTag"),
-        ValidTask : document.querySelector(".BouttonValidTask")
+        ValidTask : document.querySelector(".valider-ma-tache")
 
     }  
 

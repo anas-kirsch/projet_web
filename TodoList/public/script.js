@@ -56,7 +56,10 @@ function main(){
 
     rechercheDansLaBarre();
     
-    Components.boutton.flecheretour.addEventListener('click',reloadTasks);
+    Components.boutton.flecheretour.addEventListener('click',()=>{
+        reloadTasks();
+        Components.boutton.bouttontri.classList.remove("active");
+    });
 
 
     triDate();
