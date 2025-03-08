@@ -172,7 +172,7 @@ header{
 
 .main{
     position: absolute;
-    top: 23%;
+    top: 25%;
     width: 100%;
     z-index: -1;
     overflow: scroll;
@@ -625,7 +625,7 @@ header{
 
 
 .messageRechercheIntrouvable{
-    color: rgb(255, 0, 0);
+    color: rgb(165, 63, 63);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -640,9 +640,20 @@ header{
 
 
 .fa-arrow-left{
-    color: rgb(239,239,215);
-    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
     padding: 0px 5px 0px 10px;
+    color: #3b82f6;
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 27px;
+    width: 30px;
+    border: #3b82f6 solid 3px;
+    /* margin: 0px 10px 0px 10px; */
+    margin-left: 10px
 }
 
 .contenuPasTrouve{
@@ -721,8 +732,8 @@ header{
 
 .div-tri{
     display: grid;
-    grid-template-columns: 10% 30% 30%;
-    gap: 10px;
+    grid-template-columns:20% 30% 30%;
+    gap: 5px;
     /* justify-content: center; */
     align-items: center;
     height: 7vh;
