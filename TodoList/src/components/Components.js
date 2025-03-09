@@ -44,6 +44,8 @@ export class Components{
 
         divcherche : document.querySelector(".sectionRecherche"),
         sectionTacheUnique : document.querySelectorAll(".ListTask"),
+        divbouton: document.querySelector(".div-tri")
+
 
     }
 

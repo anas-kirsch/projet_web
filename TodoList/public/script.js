@@ -46,7 +46,7 @@ function main(){
         Local.AddTask();
         // location.reload();
         display.displayMyTask(Components.getNewTask());
-        console.log(Components.getNewTask());
+        // console.log(Components.getNewTask());
         
         
 
@@ -65,7 +65,7 @@ function main(){
     triDate();
 
 
-
+    onScrollFunction();
 
 
     return;

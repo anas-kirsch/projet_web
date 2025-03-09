@@ -62,7 +62,7 @@ export class display{
 
             const dateAfficher = new Date(newTask.date);
             const dateLisible = dateAfficher.toLocaleString('fr-FR');
-            console.log(dateLisible);
+            // console.log(dateLisible);
 
             baliseContent.textContent = newTask.content;
             baliseDate.textContent = dateLisible;
