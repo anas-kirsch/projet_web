@@ -3,7 +3,6 @@ import { getDate } from "../src/services/API/SaveDate.js"
 import {Local} from "../src/services/dataBase/local.js"
 import { deleteView} from "../src/view/deleteTask.js"
 import { display} from "../src/view/Display.js" 
-import { onScrollFunction } from "../src/components/events/Scroll.js"
 import { Event } from "../src/components/events/Event.js"
 import { resetForm } from "../src/services/dataBase/resetformulaire.js"
 import { rechercheDansLaBarre } from "../src/services/dataBase/recherche.js"
@@ -65,7 +64,7 @@ function main(){
     triDate();
 
 
-    onScrollFunction();
+    // onScrollFunction();
 
 
     return;

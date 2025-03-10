@@ -43,7 +43,7 @@ export class Components{
     static searchBar = {
 
         divcherche : document.querySelector(".sectionRecherche"),
-        sectionTacheUnique : document.querySelectorAll(".ListTask"),
+        sectionTacheUnique : document.querySelector(".ListTask"),
         divbouton: document.querySelector(".div-tri")
 
 
