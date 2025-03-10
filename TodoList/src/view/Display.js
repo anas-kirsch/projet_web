@@ -59,11 +59,13 @@ export class display{
             divTacheContent.appendChild(baliseDate);
             divTacheContent.appendChild(baliseTag);
             
-            // faire le remplissage avce lobjet
 
+            const dateAfficher = new Date(newTask.date);
+            const dateLisible = dateAfficher.toLocaleString('fr-FR');
+            // console.log(dateLisible);
 
             baliseContent.textContent = newTask.content;
-            baliseDate.textContent = newTask.date;
+            baliseDate.textContent = dateLisible;
             baliseTag.textContent = newTask.tag;
 
 
@@ -159,45 +161,7 @@ export class display{
             
         });
 
-        
-        
-             
-                
-                
-                
-                
-                
-                
-                
-
-    //     if(newTask.status == false){
-    //         baliseValid.classList.add("active");
-    //         Components.getStatus.status = true;
-            
-    //         console.log("cest active");
-    //     }
-    //     else{
-    //         baliseValid.classList.remove("active");
-    //         Components.getStatus.status = false;
-    //         let statusBtn2 = JSON.stringify(Components.getStatus().status);
-    //         localStorage.setItem("status",statusBtn2);
-    //         console.log("cest desactiver");
-    //     }
-
-
-    // let recupStatus = localStorage.getItem("status");
-    // let statusEtat = JSON.parse(recupStatus);
-    // // console.log(statusEtat);
-    
-    // if(statusEtat === true){
-    //     baliseValid.classList.add("active");
-    // }   
-    // else{
-    //     baliseValid.classList.remove("active");
-    // }
-//remove task
-
-
+   
             const titreTache = newTask.titre;
             
             baliseDelete.addEventListener('click',()=>{
@@ -207,20 +171,22 @@ export class display{
                 deleteView.deleteViewOfTask(titreTache);
 
             });
-    
+
+            
+        Components.boutton.clearTrash.addEventListener('click', ()=> {
+            
+            sectionNouvelleTache.remove();
+            divTacheContent.remove();
+            Local.deleteAllTasks();
+
             
 
+    });
+
+
     }
-
-    
-
-
 
 }
 
 
 
-
-// tabTasksList.forEach(task => {
-//     display.displayMyTask(task);
-// });

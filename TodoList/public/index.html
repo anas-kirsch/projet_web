@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -15,19 +18,87 @@
 <body>
 
     <header>
-
+        <i class="fas fa-tasks"></i>
         <h1 class="titre1"> To-Do List </h1>
-        <img src="./image/icons8-reminders-50.png" alt="logo">
 
     </header>
-
-  
+    
+    
     <section class="sectionRecherche">
-        <input class="barreDeRecherche" type="text" name="recherche" placeholder="  rechercher une tache">
-        <button class="bouttonRecherche"> Entrer </button>
-        <i class="clear fas fa-trash-alt fa-lg" style="color: #ffffff;"></i>
-    </section>
 
+        <label class="search-label">
+            <input class="barreDeRecherche" type="text" name="text" class="input" required="" placeholder="Type here...">
+            <kbd class="slash-icon">/</kbd>
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 512 512" xml:space="preserve">
+              <g>
+                <path d="M55.146 51.887 41.588 37.786A22.926 22.926 0 0 0 46.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 0 0 .083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" fill="currentColor" data-original="#000000" class=""></path>
+              </g>
+            </svg>
+          </label>
+
+        <!-- <input class="barreDeRecherche" type="text" name="recherche" placeholder="  Rechercher une tache..."> -->
+        <button class="bouttonRecherche"> Submit </button>
+
+
+
+            <!-- From Uiverse.io by vinodjangid07 --> 
+    <button class="bin-button">
+        <svg
+        class="bin-top"
+        viewBox="0 0 39 7"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        >
+        <line y1="5" x2="39" y2="5" stroke="white" stroke-width="4"></line>
+        <line
+            x1="12"
+            y1="1.5"
+            x2="26.0357"
+            y2="1.5"
+            stroke="white"
+            stroke-width="3"
+        ></line>
+        </svg>
+        <svg
+        class="bin-bottom"
+        viewBox="0 0 33 39"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        >
+        <mask id="path-1-inside-1_8_19" fill="white">
+            <path
+            d="M0 0H33V35C33 37.2091 31.2091 39 29 39H4C1.79086 39 0 37.2091 0 35V0Z"
+            ></path>
+        </mask>
+        <path
+            d="M0 0H33H0ZM37 35C37 39.4183 33.4183 43 29 43H4C-0.418278 43 -4 39.4183 -4 35H4H29H37ZM4 43C-0.418278 43 -4 39.4183 -4 35V0H4V35V43ZM37 0V35C37 39.4183 33.4183 43 29 43V35V0H37Z"
+            fill="white"
+            mask="url(#path-1-inside-1_8_19)"
+        ></path>
+        <path d="M12 6L12 29" stroke="white" stroke-width="4"></path>
+        <path d="M21 6V29" stroke="white" stroke-width="4"></path>
+        </svg>
+    </button>
+    
+
+
+
+
+
+
+
+
+    </section>
+    <div class="contenuPasTrouve">
+        <!-- <i class="fa-solid fa-rotate-left" style="color: #ffffff;"></i> -->
+         <div class="div-tri">
+             <i class="fas fa-arrow-left"></i>
+             <button class="btn-tri-alphabet"> tri : a - z </button>
+             <button  class="btn-tri"> récent > ancien </button>
+             
+            </div>
+
+    </div>
 
     
     <main class="main">
@@ -40,8 +111,11 @@
 
 
     <footer class="fond-buttonadd">
+        <!-- <img class="addListLogo" src="./image/icons8-add-50.png" alt="add List"> -->
+        <p class="addListLogo">+</p>
 
-        <img class="addListLogo" src="./image/icons8-add-50.png" alt="add List">
+
+
     </footer>
 
 
@@ -64,15 +138,14 @@
         <div class="validTask"> 
             <h2 class="texteValid">AJOUTER</h2>
             
-            <img class="BouttonValidTask" src="./image/icons8-add-50.png" alt="validTask">
+            <!-- <img class="BouttonValidTask" src="./image/icons8-add-50.png" alt="validTask"> -->
+            <p class=" valider-ma-tache">+</p>
             <i class="fa-solid fa-trash fa-2xl" style="color: #ffffff;"></i>
+            
         </div>
 
 
     </section>
- 
-
-
 
     
     <script type="module" src="script.js"></script>

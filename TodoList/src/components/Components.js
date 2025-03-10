@@ -1,5 +1,5 @@
 import { getDate } from "../services/API/SaveDate.js"
-
+import { reloadTasks } from "../view/reloadTasks.js";
 
 
 export class Components{
@@ -7,10 +7,27 @@ export class Components{
     static boutton = {
 
         addTask : document.querySelector(".addListLogo"),
-        clearTrash : document.querySelector(".clear"),//ok
-
-
+        clearTrash : document.querySelector(".bin-button"),
+        search : document.querySelector(".bouttonRecherche"),
+        flecheretour: document.querySelector(".fa-arrow-left"),
+        bouttontri : document.querySelector(".btn-tri")
     }
+
+    static input ={
+       
+        barreDeRecherche : document.querySelector(".barreDeRecherche"),        
+        contenuPasTrouve : document.querySelector(".contenuPasTrouve"),
+    };
+
+    static test = ()=>{
+
+        return {
+            barreDeRechercheInput : this.input.barreDeRecherche.value,
+
+        } 
+
+
+    };
 
     static form = {
 
@@ -19,14 +36,16 @@ export class Components{
         TasknameInput : document.querySelector(".TasknameInput"),
         TaskContentInput : document.querySelector(".InputContent"),
         TaskTagInput : document.querySelector(".InputTag"),
-        ValidTask : document.querySelector(".BouttonValidTask")
+        ValidTask : document.querySelector(".valider-ma-tache")
 
     }  
 
     static searchBar = {
 
         divcherche : document.querySelector(".sectionRecherche"),
-        sectionTacheUnique : document.querySelectorAll(".ListTask"),
+        sectionTacheUnique : document.querySelector(".ListTask"),
+        divbouton: document.querySelector(".div-tri")
+
 
     }
 

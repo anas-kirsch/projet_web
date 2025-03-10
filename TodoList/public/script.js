@@ -3,12 +3,14 @@ import { getDate } from "../src/services/API/SaveDate.js"
 import {Local} from "../src/services/dataBase/local.js"
 import { deleteView} from "../src/view/deleteTask.js"
 import { display} from "../src/view/Display.js" 
-import { onScrollFunction } from "../src/components/events/Scroll.js"
 import { Event } from "../src/components/events/Event.js"
 import { resetForm } from "../src/services/dataBase/resetformulaire.js"
-// import { displayAll } from "../src/view/displayAll.js"
+import { rechercheDansLaBarre } from "../src/services/dataBase/recherche.js"
+import { reloadTasks } from "../src/view/reloadTasks.js"
+import { triDate } from "../src/view/triDate.js"
 
 main();
+
 
 function main(){
     
@@ -20,14 +22,13 @@ function main(){
         console.log("le tableau vient d'etre creer");
     }
 
-    // displayAll.displayMyTasks(tabTasksList);
-
     tabTasksList.forEach(element => {
         display.displayMyTask(element);
+        
     });
     
     
-    console.log(tabTasksList);
+    // console.log(tabTasksList);
     const tabTasksListJSON = JSON.stringify(tabTasksList);
     localStorage.setItem("LIST",tabTasksListJSON);
     
@@ -42,26 +43,29 @@ function main(){
 
 
         Local.AddTask();
-        display.displayMyTask(Components.getNewTask());
-        console.log(Components.getNewTask());
-        
         // location.reload();
+        display.displayMyTask(Components.getNewTask());
+        // console.log(Components.getNewTask());
+        
         
 
         resetForm();
         
     });
 
-
-
-    Components.boutton.clearTrash.addEventListener('click', ()=> {
-        sectionNouvelleTache.remove();
-        divTacheContent.remove();
-        Local.deleteAllTasks();
-
-
-        //soit recuper div de chaque index soir mette locationreload
+    rechercheDansLaBarre();
+    
+    Components.boutton.flecheretour.addEventListener('click',()=>{
+        reloadTasks();
+        Components.boutton.bouttontri.classList.remove("active");
     });
+
+
+    triDate();
+
+
+    // onScrollFunction();
+
 
     return;
 }
