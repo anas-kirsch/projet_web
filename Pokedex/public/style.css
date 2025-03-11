@@ -1,0 +1,231 @@
+
+
+body{
+
+    height: 98vh;
+    background-color: rgb(153, 27, 27);
+    margin: 0;
+
+}
+
+header{
+    height: 10vh;
+    background-color: rgb(177, 25, 25);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background: linear-gradient(red,orange
+    );
+}
+
+/* logo dans le header */
+.logo-pokemon{
+    height: 4rem;
+}
+
+/*titre prinpale unique*/
+h1{
+    font-size: 3rem;
+    color: white;
+    font-family: "roboto";
+    letter-spacing: 0.2rem;
+    
+}
+
+.section-bottomOfHeader{
+
+
+    height: 10vh;
+    width: 100%;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.div-recherche{
+    height: 4.2vh;
+    width: 30vh;
+
+    background-color:#1f2937;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+    
+}
+
+.div-recherche:hover{
+    border: 2px solid rgba(255, 115, 0, 0.6);
+}
+
+.div-recherche:active{
+    transform: scale(0.95);
+}
+
+.barre-de-recherche{
+   
+
+    height: 90%;
+    width: 80%;
+
+
+    border: none;
+    cursor: pointer;
+    outline: none;
+    
+    
+    background-color: #1f2937;
+    color: white;
+
+    
+    
+}
+
+/* From Uiverse.io by cssbuttons-io */ 
+button {
+    font-size: 17px;
+    padding: 0.5em 2em;
+    font-weight: 500;
+    background: #1f2937;
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+    cursor: pointer;
+  }
+  
+  .gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0.6em;
+    margin-top: -0.25em;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.3)
+    );
+  }
+  
+  .label {
+    position: relative;
+    top: -1px;
+  }
+  
+  .transition {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 500ms;
+    /* background-color: rgba(16, 185, 129, 0.6); */
+    background-color: rgba(255, 115, 0, 0.6);
+    border-radius: 9999px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  button:hover .transition {
+    width: 14em;
+    height: 14em;
+  }
+  
+  button:active {
+    transform: scale(0.97);
+  }
+  
+
+
+
+
+/* main avec la section scroll a gauche et section qui afficher un pokemon a droite */
+
+
+main{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 30% 60%;
+    gap: 1rem;
+}
+
+.section-scroll-pokemon{
+    height: 70vh;
+    background-color: #1f2937;
+    border: 3px solid  rgba(255, 115, 0, 0.6);
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+
+}
+
+.div-liste-pokemons{
+    height: 6vh;
+    width: 90%;
+    background-color: orange;
+    border: 5px solid  rgb(153, 27, 27);
+    border-radius: 5px;
+    margin: 10px 0px 0px 0px ;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.numero-pokemon{
+
+    font-family: "roboto";
+    font-size: 2rem;
+
+}
+
+.nom-pokemon{
+    font-family: "roboto";
+
+}
+
+.image-pokemon{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.display-pokemon{
+    height: 70vh;
+    background-color: #1f2937;
+   
+}
