@@ -23,7 +23,7 @@ export async function displayListePokemons(){
 
             displayOnePokemon(pokemon);
 
-            console.log(pokemon)
+            // console.log(pokemon)
         });
         
         

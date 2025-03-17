@@ -189,7 +189,7 @@ main{
 
     display: flex;
     justify-content: space-between;
-
+    cursor: pointer;
 }
 
 .numero-pokemon{
@@ -321,6 +321,8 @@ main{
 
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     
 }
 h3{
@@ -330,4 +332,55 @@ h3{
     font-size: 25px;
     letter-spacing:1px;
 
+}
+
+
+
+
+/*evolution*/
+
+
+.divEvolution{
+    height:5vh;
+    width: 70%;
+    background-color: orange;
+    border: 5px solid rgb(153, 27, 27);
+    border-radius: 5px;
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "roboto";
+    cursor: pointer;
+
+  }
+
+.display-numero-pokemon-evolution{
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 20px;
+
+}
+
+.display-name-pokemon-evo{
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.image-pokemon-evo{
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+
+}
+
+.pasdevo{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    font-family: "roboto";
+    font-size: 20px;
+    font-weight: bold;
+    
 }
