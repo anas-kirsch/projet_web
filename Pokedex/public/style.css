@@ -195,17 +195,26 @@ main{
 .numero-pokemon{
 
     font-family: "roboto";
-    font-size: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    padding: 0px 0px 0px 20px ;
 
 }
 
 .nom-pokemon{
     font-family: "roboto";
-
+    display: flex;
+    align-items: center;
+    padding: 0px 50px 0px 0px;
 }
 
 .image-pokemon{
-
+    display: flex;
+    align-items: center;
 }
 
 
@@ -214,18 +223,111 @@ main{
 
 
 
-
-
-
-
-
-
-
-
+/*display my pokemon*/
 
 
 .display-pokemon{
     height: 70vh;
     background-color: #1f2937;
+    border: 3px solid  orange;
+
+
+
+}
+
+.align-elements-global{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.align-div1{
+    background-color: #1f2937;
+    /* border: 3px solid  orange; */
+    margin: 10px;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.display-numero-pokemon{
+
+    color: white;
+    font-size: 30px;
+    font-family: "roboto";
+    margin-bottom: 0px;
+    font-weight: bold;
+
+}
+
+.display-image-pokemon{
    
+    height: 250px;
+    width: 250px;
+}
+
+.display-nom-pokemon{
+    color: white;
+    font-size: 40px;
+    font-family: "roboto";
+    margin-bottom: 0px;
+    margin: 0px;
+
+
+}
+
+.align-div2{
+    background-color: #1f2937;
+    /* border: 3px solid  orange; */
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.style-types{
+    font-size: 25px;
+    color: white;
+    font-family: "roboto";
+    margin-bottom: 15px;
+
+    font-weight: bold;
+
+}
+
+.align-types{
+    display: flex;
+    /* flex-direction: column; */
+
+    
+}
+
+
+.types-pokemons{
+    height: 80px;
+    width: 80px;
+}
+
+.align-content-evolution{
+
+    background-color: #1f2937;
+    /* border: 3px solid  orange; */
+    margin: 10px;
+    height: 20vh;
+
+    display: flex;
+    justify-content: center;
+    
+}
+h3{
+    color: white;
+    margin-bottom: 0px;
+    font-family: "roboto";
+    font-size: 25px;
+    letter-spacing:1px;
+
 }
