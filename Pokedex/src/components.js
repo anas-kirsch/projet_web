@@ -12,6 +12,11 @@ export class Components {
         ImagePokemons : document.querySelector(".image-pokemon")
     }
  
+    static recherche = {
+        bouttonValidrecherche : document.querySelector(".bouttonValid"),
+        maBarreDeRecherche : document.querySelector(".barre-de-recherche")
+
+    }
 
 
 

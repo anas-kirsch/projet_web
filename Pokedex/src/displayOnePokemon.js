@@ -7,6 +7,7 @@ import { getOnePokemon } from "../fetchpokemon.js";
 
 export async function displayOnePokemon(pokemon){
 
+
     const sectionDisplay= document.querySelector(".display-pokemon");
     sectionDisplay.innerHTML= "";
 
@@ -35,6 +36,7 @@ export async function displayOnePokemon(pokemon){
         alignTypes.appendChild(imageType);
     });
 
+    const divEvo = cloneTemplateDeux.querySelector(".divEvolution");
 
     if(pokemon.apiEvolutions.length != 0){
 
@@ -53,18 +55,29 @@ export async function displayOnePokemon(pokemon){
         imageEvolution.setAttribute("src",monEvoDuCoup.image);
         imageEvolution.setAttribute("alt",monEvoDuCoup.name);
 
+
+        divEvo.addEventListener('click',()=>{
+
+            displayOnePokemon(monEvoDuCoup)
+      
+        });
+    
+
+
+
+
+
+
     }else{
         console.log("pas devo")
 
-        const divEvo = cloneTemplateDeux.querySelector(".divEvolution");
         divEvo.innerHTML=""
         divEvo.textContent = "Pas d'évolution ∅"
         divEvo.classList.add("pasdevo")
 
     }
 
-
-
+   
     sectionDisplay.appendChild(cloneTemplateDeux);
 
 
