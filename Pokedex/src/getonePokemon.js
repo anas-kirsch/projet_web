@@ -1,5 +1,5 @@
 
-import { displayListePokemons } from "./src/displaylistepokemons.js";
+import { displayListePokemons } from "./displaylistepokemons.js";
 
 
 export async function getOnePokemon(evoName){
@@ -12,7 +12,7 @@ export async function getOnePokemon(evoName){
                  evopokemon = reponse;
                 // console.log(evo);
         });
-            console.log(evopokemon);
+        //     console.log(evopokemon);
         
         return evopokemon;
 

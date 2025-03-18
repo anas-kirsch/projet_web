@@ -227,10 +227,10 @@ main{
 
 
 .display-pokemon{
+    
     height: 70vh;
     background-color: #1f2937;
     border: 3px solid  orange;
-
 
 
 }
@@ -240,6 +240,7 @@ main{
     flex-direction: column;
     /* justify-content: center;
     align-items: center; */
+    height: 100%;
 }
 
 .align-div1{
@@ -317,7 +318,7 @@ main{
     background-color: #1f2937;
     /* border: 3px solid  orange; */
     margin: 10px;
-    height: 20vh;
+    min-height: 20vh;
 
     display: flex;
     justify-content: center;
@@ -342,7 +343,7 @@ h3{
 
 .divEvolution{
     height:5vh;
-    width: 70%;
+    width: 90%;
     background-color: orange;
     border: 5px solid rgb(153, 27, 27);
     border-radius: 5px;
@@ -384,3 +385,26 @@ h3{
     font-weight: bold;
     
 }
+
+.divEvolutionContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        min-height: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 2Vh;
+        margin-bottom: 5vh;
+}
+
+.style-evolutions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+

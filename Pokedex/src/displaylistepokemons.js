@@ -21,9 +21,8 @@ export async function displayListePokemons(){
        div.addEventListener('click',()=>{
         
 
+        //    console.log(pokemon);
             displayOnePokemon(pokemon);
-
-            // console.log(pokemon)
         });
         
         

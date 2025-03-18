@@ -1,21 +1,21 @@
 
 import { displayOnePokemon } from "./displayOnePokemon.js";
-import { getOnePokemon } from "../fetchpokemon.js";
+import { getOnePokemon } from "./getonePokemon.js";
 import { Components } from "./components.js";
 
 export function getSearch(){
 
 
 
-    Components.recherche.bouttonValidrecherche.addEventListener('click',()=>{
+    Components.recherche.bouttonValidrecherche.addEventListener('click',async ()=>{
         // console.log("boutton")
         const PokemonQueJeCherche = Components.recherche.maBarreDeRecherche.value;
-        console.log(PokemonQueJeCherche);
+        // console.log(PokemonQueJeCherche);
 
-        const lePokemonTrouve = getOnePokemon(PokemonQueJeCherche);
-        console.log(lePokemonTrouve);
+        const lePokemonTrouve = await getOnePokemon(PokemonQueJeCherche);
+        // console.log(lePokemonTrouve);
         
-        displayOnePokemon(lePokemonTrouve);
+         displayOnePokemon(lePokemonTrouve);
 
     })
 
