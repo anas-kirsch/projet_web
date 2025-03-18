@@ -4,12 +4,11 @@ import { displayListePokemons } from "./displaylistepokemons.js";
 import { recupPokemons } from "./recupPokemons.js";
 import { getOnePokemon } from "./getonePokemon.js";
 
-
 export async function displayOnePokemon(pokemon){
 
     
 
-    console.log(pokemon)
+    // console.log(pokemon)
 
     const sectionDisplay= document.querySelector(".display-pokemon");
     sectionDisplay.innerHTML= "";
@@ -38,8 +37,8 @@ export async function displayOnePokemon(pokemon){
 
         imageType.classList.add("types-pokemons")
         alignTypes.appendChild(imageType);
+        
     });
-
 
     
     const divEvolutionContainer = cloneTemplateDeux.querySelector(".divEvolutionContainer");
@@ -54,7 +53,7 @@ export async function displayOnePokemon(pokemon){
     if (pokemon.apiEvolutions.length != 0) {
 
         pokemon.apiEvolutions.forEach(async (lesEvo) => {
-            console.log(lesEvo);
+            // console.log(lesEvo);
 
             const monEvoDuCoup = await getOnePokemon(lesEvo.name);
             // console.log(monEvoDuCoup);
@@ -96,10 +95,9 @@ export async function displayOnePokemon(pokemon){
         }
 
         sectionDisplay.appendChild(cloneTemplateDeux);
-
-
-
         
+        
+
 
 }
 

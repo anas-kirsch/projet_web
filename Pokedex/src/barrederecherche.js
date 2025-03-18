@@ -9,6 +9,8 @@ export function getSearch(){
 
     Components.recherche.bouttonValidrecherche.addEventListener('click',async ()=>{
         // console.log("boutton")
+        const divMessage = document.querySelector(".display-home-content")
+        divMessage.classList.add("active");
         const PokemonQueJeCherche = Components.recherche.maBarreDeRecherche.value;
         // console.log(PokemonQueJeCherche);
 

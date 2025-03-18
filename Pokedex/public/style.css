@@ -408,3 +408,91 @@ h3{
     width: 60%;
 }
 
+
+
+
+
+/*home content*/
+
+.display-home-content{
+    /* color: white; */
+    font-family: "roboto";
+    font-size: 10vH;
+    z-index: 100;
+    background-color: #1f2937;
+    padding: 5vh;
+    width:80vh;
+    position: absolute;
+    left:75vh;
+
+
+    color: white;
+    font-family: "roboto";
+    font-size: 10vH;
+    z-index: 100;
+    background-color: #1f2937;
+    padding: 5vh;
+    width: 75vh;
+    position: absolute;
+    left: 40%;
+    right: 79vh;
+    padding: -1px 0px 0px 0px;
+    top: 35%;
+    height: 20vh;
+    /* margin: 0px; */
+
+}
+h6{
+    margin: 0px;
+}
+
+.display-home-content.active{
+    display: none;
+}
+
+
+
+
+
+/*bouton externe api*/
+
+
+
+/* From Uiverse.io by Jedi-hongbin */ 
+.goback {
+    display: flex;
+    height: 3em;
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background:rgb(153, 27, 27);
+    
+
+
+    position: absolute;
+    top: 25vh;
+    left: 40%;
+   }
+   
+   .goback> svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   }
+   
+   .goback:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+   .goback:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }

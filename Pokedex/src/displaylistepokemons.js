@@ -17,10 +17,12 @@ export async function displayListePokemons(){
         const cloneTemplate = template.content.cloneNode(true);
 
         const div = cloneTemplate.querySelector(".div-liste-pokemons")
-
-       div.addEventListener('click',()=>{
+        const sectionDisplay= document.querySelector(".display-pokemon");
         
-
+        
+        div.addEventListener('click',()=>{
+            const divMessage = document.querySelector(".display-home-content")
+            divMessage.classList.add("active");
         //    console.log(pokemon);
             displayOnePokemon(pokemon);
         });
