@@ -496,3 +496,46 @@ h6{
     box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
     transform: translateY(-2px);
    }
+
+
+
+   /*boutton next*/
+
+   /* From Uiverse.io by Jedi-hongbin */
+.gonext {
+    display: flex;
+    height: 3em;
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: rgb(27, 153, 27); /* Changement de couleur en vert */
+    position: absolute;
+    top: 25vh;
+    right: 10%;
+}
+
+.gonext > svg {
+    margin-left: 5px; /* La flèche est maintenant à droite du texte */
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+
+.gonext:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(5px); /* La flèche bouge vers la droite au survol */
+}
+
+.gonext:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+}
+
+/* .goback>svg{
+    transform: rotateX('180deg');
+} */

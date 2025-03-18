@@ -84,7 +84,7 @@ export async function displayOnePokemon(pokemon){
             divEvolutionContainer.appendChild(divEvo);
         });
         } else {
-            console.log("pas devo");
+            // console.log("pas devo");
 
             const divEvo = document.createElement("div");
             divEvo.classList.add("divEvolution");

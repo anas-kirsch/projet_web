@@ -8,7 +8,7 @@ import { displayOnePokemon } from "./displayOnePokemon.js";
 export async function displayListePokemons(){
 
     const tableauPokemons =  await recupPokemons();
-    console.log(tableauPokemons);
+    // console.log(tableauPokemons);
 
     const template = document.querySelector("#template");
 
