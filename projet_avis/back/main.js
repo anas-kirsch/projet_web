@@ -10,7 +10,7 @@ sequelize.sync({force : true}).then(()=>{
 function main(){
     const app = express();
     app.use(express.json()); // Cette ligne parse le body JSON et créer la variable req.body
-    // app.use(cors()) 
+    app.use(cors()) 
     // ...
 
     
@@ -21,6 +21,7 @@ function main(){
     });
 
     app.post("/create-avis",async (req,res)=>{
+        console.log(req.body);
         const avis = await newAvis(req.body.name,req.body.mail,req.body.comment);
         res.json(avis);
     })

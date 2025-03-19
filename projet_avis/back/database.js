@@ -4,13 +4,15 @@ import { DataTypes, Sequelize } from "sequelize";
  * Init BDD
  */
 const login = {
-    database : "bhlocation",
-    username : "root",
-    password : "root",
+    database : "Postes",
+    username : "Postes",
+    password : "ntdwqv8lPx245Ko4",
 };
 export const sequelize = new Sequelize(login.database,login.username,login.password,{
-    dialect:"mysql",
-    // port : 3396
+    dialect:"postgres",
+    host : "db.dcdunzuufqfotbxcyik.supabase.co",
+    port : "5432",
+    
 });
 
 /**
