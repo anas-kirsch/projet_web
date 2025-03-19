@@ -4,7 +4,7 @@ Ce projet est un Pokedex interactif qui permet aux utilisateurs de naviguer à t
 
 ## Fonctionnalités
 
-- **Navigation entre les Pokémon** : Utilisez les boutons "Previous" et "Next" pour naviguer à travers la liste des Pokémon.
+- **Navigation entre les Pokémon** : Utilisez les boutons "back" et "Next" pour naviguer à travers la liste des Pokémon.
 - **Recherche de Pokémon** : Trouvez un Pokémon spécifique en utilisant la barre de recherche.
 - **Visualisation des évolutions** : Consultez les évolutions d'un Pokémon directement depuis son profil.
 - **Affichage des détails** : Chaque Pokémon affiche des informations détaillées telles que son type.
