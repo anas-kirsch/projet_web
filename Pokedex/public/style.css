@@ -189,23 +189,32 @@ main{
 
     display: flex;
     justify-content: space-between;
-
+    cursor: pointer;
 }
 
 .numero-pokemon{
 
     font-family: "roboto";
-    font-size: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    padding: 0px 0px 0px 20px ;
 
 }
 
 .nom-pokemon{
     font-family: "roboto";
-
+    display: flex;
+    align-items: center;
+    padding: 0px 50px 0px 0px;
 }
 
 .image-pokemon{
-
+    display: flex;
+    align-items: center;
 }
 
 
@@ -214,18 +223,319 @@ main{
 
 
 
-
-
-
-
-
-
-
-
+/*display my pokemon*/
 
 
 .display-pokemon{
+    
     height: 70vh;
     background-color: #1f2937;
-   
+    border: 3px solid  orange;
+
+
 }
+
+.align-elements-global{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    height: 100%;
+}
+
+.align-div1{
+    background-color: #1f2937;
+    /* border: 3px solid  orange; */
+    margin: 10px;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.display-numero-pokemon{
+
+    color: white;
+    font-size: 30px;
+    font-family: "roboto";
+    margin-bottom: 0px;
+    font-weight: bold;
+
+}
+
+.display-image-pokemon{
+   
+    height: 250px;
+    width: 250px;
+}
+
+.display-nom-pokemon{
+    color: white;
+    font-size: 40px;
+    font-family: "roboto";
+    margin-bottom: 0px;
+    margin: 0px;
+
+
+}
+
+.align-div2{
+    background-color: #1f2937;
+    /* border: 3px solid  orange; */
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.style-types{
+    font-size: 25px;
+    color: white;
+    font-family: "roboto";
+    margin-bottom: 15px;
+
+    font-weight: bold;
+
+}
+
+.align-types{
+    display: flex;
+    /* flex-direction: column; */
+
+    
+}
+
+
+.types-pokemons{
+    height: 80px;
+    width: 80px;
+}
+
+.align-content-evolution{
+
+    background-color: #1f2937;
+    /* border: 3px solid  orange; */
+    margin: 10px;
+    min-height: 20vh;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+h3{
+    color: white;
+    margin-bottom: 0px;
+    font-family: "roboto";
+    font-size: 25px;
+    letter-spacing:1px;
+
+}
+
+
+
+
+/*evolution*/
+
+
+.divEvolution{
+    height:5vh;
+    width: 90%;
+    background-color: orange;
+    border: 5px solid rgb(153, 27, 27);
+    border-radius: 5px;
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "roboto";
+    cursor: pointer;
+
+  }
+
+.display-numero-pokemon-evolution{
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 20px;
+
+}
+
+.display-name-pokemon-evo{
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.image-pokemon-evo{
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+
+}
+
+.pasdevo{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    font-family: "roboto";
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.divEvolutionContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        min-height: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 2Vh;
+        margin-bottom: 5vh;
+}
+
+.style-evolutions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+
+
+
+
+/*home content*/
+
+.display-home-content{
+    /* color: white; */
+    font-family: "roboto";
+    font-size: 10vH;
+    z-index: 100;
+    background-color: #1f2937;
+    padding: 5vh;
+    width:80vh;
+    position: absolute;
+    left:75vh;
+
+
+    color: white;
+    font-family: "roboto";
+    font-size: 10vH;
+    z-index: 100;
+    background-color: #1f2937;
+    padding: 5vh;
+    width: 75vh;
+    position: absolute;
+    left: 40%;
+    right: 79vh;
+    padding: -1px 0px 0px 0px;
+    top: 35%;
+    height: 20vh;
+    /* margin: 0px; */
+
+}
+h6{
+    margin: 0px;
+}
+
+.display-home-content.active{
+    display: none;
+}
+
+
+
+
+
+/*bouton externe api*/
+
+
+
+/* From Uiverse.io by Jedi-hongbin */ 
+.goback {
+    display: flex;
+    height: 3em;
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background:rgb(153, 27, 27);
+    
+
+
+    position: absolute;
+    top: 25vh;
+    left: 40%;
+   }
+   
+   .goback> svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   }
+   
+   .goback:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+   .goback:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+
+
+
+   /*boutton next*/
+
+   /* From Uiverse.io by Jedi-hongbin */
+.gonext {
+    display: flex;
+    height: 3em;
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: rgb(27, 153, 27); /* Changement de couleur en vert */
+    position: absolute;
+    top: 25vh;
+    right: 10%;
+}
+
+.gonext > svg {
+    margin-left: 5px; /* La flèche est maintenant à droite du texte */
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+
+.gonext:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(5px); /* La flèche bouge vers la droite au survol */
+}
+
+.gonext:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+}
+
+/* .goback>svg{
+    transform: rotateX('180deg');
+} */

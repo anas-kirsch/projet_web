@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./image/pikachu.png">
 
     <link rel="stylesheet" href="    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>POKEDEX</title>
@@ -16,7 +17,7 @@
     
     <header>
         <svg class="logo-pokemon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1333.34 1333.07" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><defs><style>.fil0{fill:#fff;fill-rule:nonzero}</style></defs><g id="Layer_x0020_1"><g id="_1473324886368"><path id="Down" class="fil0" d="M666.54 885.24c-105.31 0-193.15-74.56-214.01-173.61H102.19c24.77 288.04 266.41 514.04 560.7 514.04 294.3 0 536.2-226 560.7-514.04H880.55c-20.85 99.32-108.7 173.61-214.01 173.61z"/><path id="Shadow_Down" d="M791.66 1211.07c233.56-54.74 411.08-254.68 431.94-499.44h-138.16c-13.81 222.09-130.34 410.3-293.78 499.44z" fill="#dfdfdf" fill-rule="nonzero"/><path id="Center" class="fil0" d="M795.57 666.54c-.26 0-.26 0 0 0-.26-15.9-3.13-31.02-8.34-45.09-18.25-49.01-65.43-83.68-120.69-83.68-55.26 0-102.44 34.93-120.69 83.68a129.312 129.312 0 00-8.08 45.09h.26c0 15.9 2.87 31.02 8.08 45.09 18.25 49.01 65.43 83.68 120.69 83.68 55.26 0 102.44-34.93 120.69-83.68 5.21-13.82 8.08-29.19 8.08-45.09z"/><path id="Up" d="M666.8 448.09c105.31 0 193.15 74.56 214.01 173.61h350.34c-24.76-288.3-266.41-514.3-560.96-514.3-294.56 0-535.94 226-560.7 514.04h343.3c20.85-99.06 108.7-173.35 214.01-173.35z" fill="#ff1c1c" fill-rule="nonzero"/><path id="Shadow_Up" d="M1085.44 621.44h145.45C1209.52 372.5 1026 169.7 786.45 119.38c166.31 87.84 284.91 277.87 298.99 502.06z" fill="#df1818" fill-rule="nonzero"/><path id="Line" d="M670.19 107.4c294.56 0 536.2 226 560.7 514.04H880.55c-20.85-99.06-108.7-173.61-214.02-173.61-105.31 0-193.15 74.56-214.01 173.61H109.48c24.76-288.05 266.41-514.04 560.7-514.04zm117.04 514.04c5.21 14.07 8.08 29.19 8.08 45.09h.26c0 15.9-2.87 31.02-8.08 45.09-18.24 49.01-65.43 83.68-120.69 83.68-55.26 0-102.44-34.93-120.69-83.68a129.312 129.312 0 01-8.08-45.09h-.26c0-15.9 2.87-31.02 8.08-45.09 18.24-49.01 65.43-83.68 120.69-83.68 55.26 0 102.44 34.93 120.69 83.68zm-124.34 604.49c-294.56 0-536.2-226-560.7-514.04h350.34c20.85 99.05 108.7 173.61 214.01 173.61 105.31 0 193.16-74.56 214.02-173.61h343.3c-24.76 287.78-266.41 514.04-560.96 514.04zM666.54 0C298.47 0 0 298.46 0 666.54c0 368.07 298.47 666.54 666.54 666.54 368.07 0 666.8-298.21 666.8-666.54S1034.87 0 666.54 0z" fill="#000" fill-rule="nonzero"/></g></g></svg>
-        <H1>POKEMON</H1>
+        <H1>POKEDEX</H1>
 
     </header>
     
@@ -26,7 +27,7 @@
             <input class="barre-de-recherche" type="text" placeholder="Find your pokemon...">
             <!-- <button class="valider-la-recherche"> submit</button> -->
         </div>
-            <button>
+            <button class="bouttonValid">
                 <span class="transition"></span>
                 <span class="gradient"></span>
                 <span class="label">Valid</span>
@@ -36,27 +37,87 @@
 
 
     <main>
-        <section class="section-scroll-pokemon">
-            <div class="div-liste-pokemons">
-                <P class="numero-pokemon"> 1</P>
-                <h2 class="nom-pokemon"> pikachu</h2>
-                <img class="image-pokemon" src="./image/pikachu.png" alt="">
-            </div>
 
+        
+        <section class="section-scroll-pokemon">
+            <template id="template">
+
+                <div class="div-liste-pokemons">
+                    <P class="numero-pokemon"> </P>
+                    <h2 class="nom-pokemon"> </h2>
+                    <img class="image-pokemon" src="" alt="">
+                </div>
+                
+            </template>
         </section>
 
 
         
+      
+             <div class="display-home-content">
 
-        <!-- <template id="template-pokemon"> -->
+                 <h6>Bienvenue dans le POKEDEX, cherchez un pokemon... </h6>
+                 <p></p>
+
+             </div>
+
+
             <section class="display-pokemon">
                 
-                <p class="display-numero-pokemon"></p>
-                <img class="display-image-pokemon" src="" alt="">
-                <h2 class="display-nom-pokemon"></h2>
-                <p class=""></p>
             </section>
-        <!-- </template> -->
+            
+            <template id="template-deux">
+
+                <div class="align-elements-global">
+                    <div class="align-div1">
+                    <div>
+                        <p class="display-numero-pokemon"></p>
+                        <h2 class="display-nom-pokemon"></h2>
+                    </div>
+                    <img class="display-image-pokemon" src="" alt="">
+                    
+                </div>
+
+                
+                <div class="align-div2">
+                    <p class="style-types">Types : </p>
+                    
+                    <div class="align-types">
+                        <!-- <img class="types-pokemons" src="" alt=""> -->
+                    </div>
+                </div>
+                
+                
+                <div class="align-content-evolution">
+                    <h3>Evolution</h3>
+                    <div class="divEvolutionContainer">
+
+                        <div class="divEvolution">
+                            <p class="display-numero-pokemon-evolution"></p>
+                            <p class="display-name-pokemon-evo"> </p>
+                            <img class="image-pokemon-evo" src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+        </template>
+
+                <!-- From Uiverse.io by Jedi-hongbin --> 
+        <button class="goback">
+            <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"><path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path></svg>
+            <span>Back</span>
+        </button>
+        <button class="gonext">
+            <span>Next</span>
+            <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+                <path d="M149.31 495.52c0-11.3 9.17-20.47 20.47-20.47h604.77l-188.08-188.08c-7.99-7.99-7.99-20.95 0-28.94 4-3.99 9.24-5.99 14.47-5.99s10.48 1.99 14.48 5.99l223.01 223.01c3.84 3.84 5.99 9.05 5.99 14.47 0 5.43-2.16 10.63-5.99 14.47l-223.02 223.03c-7.99 7.99-20.96 7.99-28.95 0-7.99-8-7.99-20.96 0-28.95l188.07-188.07H169.78c-11.3 0-20.47-9.16-20.47-20.47z"></path>
+            </svg>
+        </button>
+        
 
 
 
@@ -64,6 +125,8 @@
 
 
 
+    
 
 </body>
+    <script type="module" src="script.js"></script>
 </html>
