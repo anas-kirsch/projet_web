@@ -24,4 +24,4 @@ Ce projet est un Pokedex interactif qui permet aux utilisateurs de naviguer à t
    ```bash
    git clone https://github.com/anas-kirsch/projet_web.git
 
-2. *cd Pokedex*
+2. cd Pokedex
