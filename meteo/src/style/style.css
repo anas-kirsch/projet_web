@@ -1,0 +1,212 @@
+
+body{
+    background-color:lightblue;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+
+@media screen and (max-width: 410px){
+
+
+    body{
+        background-color:lightblue;
+        background: linear-gradient(135deg, #6dd5ed, #2193b0);
+        height: 98vh;
+        overflow: hidden;
+
+    }
+
+    /*section de presentation*/
+    .container-presentation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        font-family: "roboto";
+        color: white;
+        letter-spacing:2px;
+
+        margin: 15px 0px 0px 0px;
+
+    }
+
+    .style-texte-meteo{
+        text-transform: uppercase;
+        color: #ff6f61;
+    }
+
+    
+    .slogan{
+        font-size: 1.2rem;
+        font-family: "roboto";
+        color: white;
+        letter-spacing:1px;
+        font-weight: bold;
+        margin: 10px 0px 20px 0px;
+    }
+
+    /*container barre de recherche*/
+    
+    .container-barrederecherche{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5vh;
+    }
+    
+    .div-barrederecherche{
+       width: 100%;
+       height: 100%;
+       display: flex;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 75% 25%;    
+
+    }
+
+
+    .barrederecherche{
+        outline: none;
+        border: none;
+        border-radius: 5px 0px 0px 5px;
+        padding: 0px 0px 0px 10px;
+        cursor: pointer;
+    }
+
+
+    .validelarecherche{
+        border: none;
+        border-radius: 0px 5px 5px 0px;
+        background-color: #ff6f61;
+        color: white;
+        cursor: pointer;
+        opacity: 0.9;
+        transition: 0.3s;
+
+    }
+    .validelarecherche:hover{
+        opacity: 1;
+        background: #ff4a3d;
+    }
+
+
+    main{
+        height: 75vh;
+    }
+
+    /*container meteo en direct*/
+
+    .container-meteo-direct{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ville-localisation{
+        color: white;
+        font-family: "roboto";
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 1.8rem;
+        margin: 20px 0px 0px 0px ;
+
+    }
+
+    .temperature{
+        font-family: "roboto";
+        font-size: 4rem;
+        color: white;
+        margin: 15px 0px 0px 0px ;
+
+    }
+
+    .temps{
+        font-family: "roboto";
+        font-size: 1.5rem;
+        color: white;
+        margin: 10px 0px 0px 0px ;
+    }
+
+
+
+
+    .container-source{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vh;
+    }
+
+    .source-data{
+        color: white;
+        font-family: "roboto";
+        /* font-weight: bold; */
+    }
+
+    .source-titre{
+        color: #ff6f61;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .source-titre:hover{
+        color: #ff4a3d;
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*faq*/
+
+    .fa-circle-info{
+        color: white;
+        font-size: 4vh;
+    }
+
+
+
+    .div-proposition-recherche{
+        background-color: white;
+        min-height: 4vh;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        /* border-radius: 5px; */
+        border: 1px solid  #ff6f61;
+
+        
+
+        /* display: none; */
+        /* z-index: 100; */
+
+    }
+
+    .texte-proposition{
+        font-family: "roboto";
+        margin: 0px;
+
+    }
+
+    
+
+
+
+}

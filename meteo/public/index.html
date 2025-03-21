@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Manrope:wght@200..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="./image/icons8-rain-64.png">
+
+    <link rel="stylesheet" href="../src/style/style.css">
+    <title>Direct Météo</title>
+</head>
+<body>
+    
+    <header>
+
+        <section class="container-presentation">
+            
+            <h1>Direct <span class="style-texte-meteo">Météo</span> </h1>
+            <p class="slogan">Votre météo à l'instant..</p>
+        
+        </section>
+        <section class="container-barrederecherche">
+            <!-- <div class="div-barrederecherche"> -->
+                <form action="" class="div-barrederecherche">
+
+                    
+                    <input class="barrederecherche" type="text" placeholder="Entrez une ville ou des coordonnées">
+                    <button class="validelarecherche" type="submit" >Rechercher</button>
+                </form>
+            <!-- </div> -->
+        </section>
+
+        <section class="template-container">
+
+            <template class="template-recherche">
+                <div class="div-proposition-recherche">
+                    <ul class="texte-proposition"></ul>
+                </div>
+            </template>
+        </section>
+    
+    </header>
+
+
+    <main>
+        <section class="container-meteo-direct">
+            <p class="ville-localisation">Toulon</p>
+            <p class="temperature"></p>
+            <p class="temps">Nuageux</p>
+
+        </section>
+
+        <section>
+            <!-- <i class="fa fa-question" aria-hidden="true"></i> -->
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="container-source">
+            <i class="fa-solid fa-circle-info"></i>
+            <p class="source-data"> Données fournies par <span class="source-titre">open-meteo.com</span></p>
+        </div>
+    </footer>
+
+</body>
+
+    <script type="module" src="../src/script.mjs"></script>
+</html>
