@@ -187,26 +187,43 @@ body{
         background-color: white;
         min-height: 4vh;
         display: flex;
-        align-items: center;
-        padding-left: 10px;
+        /* align-items: center; */
+        /* padding-left: 10px; */
         /* border-radius: 5px; */
         border: 1px solid  #ff6f61;
+        display: flex;
+        flex-direction: column;
+
 
         
 
-        /* display: none; */
+        display: none;
+        position: absolute;
+        width: 72%;
         /* z-index: 100; */
 
+    }
+    .div-proposition-recherche.active{
+        display: block;
     }
 
     .texte-proposition{
         font-family: "roboto";
         margin: 0px;
-
+        /* border: 1px  #ff6f61 solid ; */
+        /* padding-left: 10px; */
+        padding: 10px 10px 10px 10px;
     }
 
-    
+    .messageErreur{
+        font-family: "roboto";
+        margin: 0px;
+        /* border: 1px  #ff6f61 solid ; */
+        /* padding-left: 10px; */
+        padding: 10px 10px 10px 10px;
+    }
 
-
-
+    .messageErreur.active{
+        display: none;
+    }
 }

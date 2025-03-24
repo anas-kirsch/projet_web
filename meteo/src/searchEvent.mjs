@@ -2,49 +2,45 @@
 import { Components } from "./components/Components.mjs";
 import { getstatfetch } from "./getstats.mjs";
 import { displayStats } from "./displayStats.mjs";
+import { GeoCityServices } from "./services/GeoCityService.mjs";
 
 export function search(){
 
 
     Components.search.formulaire.addEventListener('input',async(event)=>{
         const template = document.querySelector(".template-recherche")
-        // template.innerHTML= "";
+        const div = document.querySelector(".div-proposition-recherche")
+        div.classList.add("active")
+        div.innerHTML= "";
         
         const dataOfInput = Components.search.barrederecherche.value;
         event.preventDefault();
         // console.log(dataOfInput);
         
-        
-        const getCityName = fetch("https://geocoding-api.open-meteo.com/v1/search?name="+dataOfInput+"&count=10&language=fr&format=json")
-        
-        let arrayOfCity = await getCityName.then((Response)=>{
-            return Response.json();
-        }).catch((error)=>{
-            console.log(error.message);
+        const arrayOfCity =await GeoCityServices.getCityInfo(dataOfInput)
+        .then(arrayOfCity=>{
+            console.log(arrayOfCity);
+    
+            for (let index = 0; index < 5; index++) {
+                const cloneTemplate = template.content.cloneNode(true);
+                const p = cloneTemplate.querySelector(".texte-proposition")
+                p.textContent =" "+arrayOfCity.results[index].name+", "+arrayOfCity.results[index].country+"";
+                
+                cloneTemplate.appendChild(p);
+                div.appendChild(cloneTemplate)
+                // const header= document.querySelector("header");
+                // header.appendChild(cloneTemplate)
+            }
         })
+        .catch(err=>{
+            // console.error("pas trouvé");
+            const messageErreur = document.createElement("p");
+            messageErreur.classList.add("messageErreur")
+            messageErreur.textContent = "..."
+            div.appendChild(messageErreur)
+        });        
+
         
-        // const containerTemplate = document.querySelector(".template-container");
-        console.log(arrayOfCity);
-        
-        
-     
-        
-        for (let index = 0; index < 5; index++) {
-            
-            
-            const cloneTemplate = template.content.cloneNode(true);
-            const div = cloneTemplate.querySelector(".div-proposition-recherche")
-            const ul = cloneTemplate.querySelector(".texte-proposition")
-            
-            ul.textContent =" "+arrayOfCity.results[index].name+", "+arrayOfCity.results[index].country+"";
-            div.appendChild(ul);
-            cloneTemplate.appendChild(div)
-            
-            const header= document.querySelector("header");
-            header.appendChild(cloneTemplate)
-            
-            
-        }
         
         
 
@@ -60,17 +56,22 @@ export function search(){
             
         if( found == null){
             // console.log("pas de nombre ceci est une ville")
+
+
+
+
+
         }
        else{
 
            const ArrayLatLong = dataOfInput.split(" ");
-        // console.log(ArrayLatLong);
+        console.log(ArrayLatLong);
 
         const arrayLat = ArrayLatLong[0].split("=");
-        // console.log(arrayLat[1])
+        console.log(arrayLat[1])
         
         const arrayLong = ArrayLatLong[1].split("=");
-        // console.log(arrayLong[1])
+        console.log(arrayLong[1])
         
         const latitude = arrayLat[1];        
         const longitude = arrayLong[1];
