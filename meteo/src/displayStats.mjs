@@ -15,7 +15,10 @@ export async function displayStats(coord){
     // Components.data.ville.textContent = "latitude : "+coord.latitude" : "
     
     Components.data.temperature.textContent = mystat.current.temperature_2m;
-    // Components.data.ville.textContent =
+    Components.data.ville.textContent = Components.search.barrederecherche.value;
 
+
+
+    Components.search.barrederecherche.value="";
 }
 
