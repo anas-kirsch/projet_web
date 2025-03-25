@@ -15,6 +15,11 @@ export class Commponents{
         bouttonEnvoie : document.querySelector(".boutton-envoie-avis"),
     }
 
+    static formulaire = {
+
+        formulaire : document.querySelector(".form"),
+    }
+
 
 
 
