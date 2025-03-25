@@ -9,10 +9,19 @@ main();
 
 function main(){
 
+    const div = document.querySelector(".div-proposition-recherche")
+    
+    document.addEventListener('click',()=>{
+        
+        div.classList.remove("active")
+            
+    })
     
 
     getPotentialCityToSearch();
     handleSearchBarreEvent();
     ChooseSuggestions();
+
+
 
 }

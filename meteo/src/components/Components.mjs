@@ -7,9 +7,20 @@ export class Components{
 
         ville : document.querySelector(".ville-localisation"),
         temperature : document.querySelector(".temperature"),
-        ciel : document.querySelector(".temps"),
+        pays: document.querySelector(".pays-localisation"),
         
+        containerCiel: document.querySelector(".container-temps"),
+        ciel : document.querySelector(".temps"),
+        imgCiel : document.querySelector(".cloudCover"),
+
+        precipitation:document.querySelector(".precipitation"),
+        pressure : document.querySelector(".pressure"),
+
+
+        containerDAYNIGHT: document.querySelector(".container-isday"),
+        imgISDAYNIGHT :document.querySelector(".image-jour-nuit"),
     }
+
 
     static search = {
 
