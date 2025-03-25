@@ -8,12 +8,14 @@ import { getstatfetch } from "./getstats.mjs";
 export async function displayStats(coord){
     
     const mystat = await getstatfetch(coord);
-    console.log(mystat);
+    // console.log(mystat);
+
+    
     
     // Components.data.ville.textContent = "latitude : "+coord.latitude" : "
     
     Components.data.temperature.textContent = mystat.current.temperature_2m;
-
+    // Components.data.ville.textContent =
 
 }
 

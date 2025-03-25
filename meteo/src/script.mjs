@@ -1,13 +1,15 @@
 
 import { Components } from "./components/Components.mjs";
-import { search } from "./searchEvent.mjs";
-
+import { getPotentialCityToSearch } from "./searchEvent.mjs";
+import { handleSearchBarreEvent } from "./eventSubmitSearch.mjs";
 main();
 
 function main(){
 
-    search();
+    
 
+    getPotentialCityToSearch();
+    handleSearchBarreEvent();
 
 
 }
