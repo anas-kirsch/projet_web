@@ -93,6 +93,7 @@ export function getPotentialCityToSearch(){
             const messageErreur = document.createElement("p");
             messageErreur.classList.add("messageErreur")
             messageErreur.textContent = "..."
+            messageErreur.style.paddingLeft ="10px"
             div.appendChild(messageErreur)
         });        
 

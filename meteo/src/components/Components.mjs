@@ -9,13 +9,17 @@ export class Components{
         temperature : document.querySelector(".temperature"),
         pays: document.querySelector(".pays-localisation"),
         
-        containerCiel: document.querySelector(".container-temps"),
+        containerCiel: document.querySelectorAll(".container-temps"),
         ciel : document.querySelector(".temps"),
         imgCiel : document.querySelector(".cloudCover"),
 
         precipitation:document.querySelector(".precipitation"),
-        pressure : document.querySelector(".pressure"),
+        precipitationImg: document.querySelector(".precipitationImg"),
 
+        pressure : document.querySelector(".pressure"),
+        pressureImg: document.querySelector(".pressureImg"),
+        humidity : document.querySelector(".humidity"),
+        humidityImg : document.querySelector(".humidityImg"),
 
         containerDAYNIGHT: document.querySelector(".container-isday"),
         imgISDAYNIGHT :document.querySelector(".image-jour-nuit"),
@@ -30,7 +34,12 @@ export class Components{
 
     }
 
-
+    static css = {
+        body : document.querySelector("body"),
+        containerDirectMeteo: document.querySelector(".container-meteo-direct")
+        
+   
+    }
 
 
 
