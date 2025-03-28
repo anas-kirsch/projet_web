@@ -6,6 +6,10 @@ import { getstatfetch } from "./getstats.mjs";
  * @param {{latitude:number,longitude:number}} coord 
  */
 export async function displayStats(coord){
+
+
+
+    
     
     const mystat = await getstatfetch(coord);
     // console.log(mystat);
@@ -13,27 +17,15 @@ export async function displayStats(coord){
     const nuageAccueil = document.querySelector(".wrapper")
     nuageAccueil.classList.add("active")
 
-    // const h5 = document.querySelector("h5");
-    // h5.classList.add("active");
-
     const divAccueil = document.querySelector(".accueil");
     divAccueil.classList.add("active")
 
 
-
-
-
-
-    
-    // Components.data.ville.textContent = "latitude : "+coord.latitude" : "
     
     Components.data.temperature.textContent = ""+ mystat.current.temperature_2m+"°";
 
-    // const dirtyText = Components.search.barrederecherche.value;
-    // const cleantext = dirtyText.replace(/\s+/g, ' ').trim();
     Components.data.ville.textContent = Components.search.barrederecherche.value;
 
-    /* couverture ciel */
     Components.data.ciel.textContent = "Couverture : "+mystat.current.cloud_cover+"%";
 
     
@@ -115,20 +107,6 @@ export async function displayStats(coord){
 
 
 
-
-
     Components.search.barrederecherche.value="";
 }
 
-
-
-// containerCiel: document.querySelector(".container-temps"),
-// ciel : document.querySelector(".temps"),
-// imgCiel : document.querySelector(".cloudCover"),
-
-// precipitation:document.querySelector(".precipitation"),
-// pressure : document.querySelector(".pressure"),
-
-
-// containerDAYNIGHT: document.querySelector(".container-isday"),
-// imgISDAYNIGHT :document.querySelector(".image-jour-nuit"),

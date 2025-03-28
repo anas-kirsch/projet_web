@@ -41,6 +41,13 @@ export class Components{
    
     }
 
+    static infos = {
+
+        btnInfos : document.querySelector(".fa-circle-info"),
+        closebtn : document.querySelector(".fa-x"), 
+
+        containerInfos :document.querySelector(".container-infos")
+    }
 
 
 

@@ -11,13 +11,8 @@ export async function ChooseSuggestions(){
 
         const div = document.querySelector(".div-proposition-recherche")
 
-      
-
-        // event.preventDefault();
+    
         div.classList.remove("active")
-        // const dataOfInput = Components.search.barrederecherche.value;
-        // console.log(dataOfInput);
-        // console.log(typeof dataOfInput);
 
 
         
@@ -48,9 +43,7 @@ export async function ChooseSuggestions(){
             
             displayStats(statdelaville);
 
-            
-     
-
+        
 
         }
     else{
@@ -103,39 +96,3 @@ export async function ChooseSuggestions(){
 
 
 
-
-
-// arrayOfCity.results.forEach(city => {
-            
-//     // console.log(city)
-    
-//     const cloneTemplate = template.content.cloneNode(true);
-//     const p = cloneTemplate.querySelector(".texte-proposition")
-//     p.textContent =" "+city.name+", "+city.admin2+" "+city.country+"";
-    
-//     cloneTemplate.appendChild(p);
-//     div.appendChild(cloneTemplate)
-    
-//     p.addEventListener('click',async()=>{
-//         div.classList.remove("active")
-        
-//         console.log(city.name)
-//         console.log(city.latitude)
-//         console.log(city.longitude)
-        
-//         const objectCoord =  {
-//             latitude: city.latitude,
-//             longitude: city.longitude
-//         }
-//         console.log(objectCoord)
-        
-//         const statdelaville  = await getstatfetch(objectCoord);
-//         console.log(statdelaville)
-        
-//         displayStats(statdelaville);
-        
-        
-//     })
-    
-//     return arrayOfCity;
-// });

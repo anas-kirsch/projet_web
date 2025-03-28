@@ -75,11 +75,6 @@ export function getPotentialCityToSearch(){
             const coordJSON = JSON.stringify(objectCoord);
             localStorage.setItem("RECHERCHE",coordJSON)
             
-            // const statdelaville  = await getstatfetch(objectCoord);
-            // console.log(statdelaville)
-            
-            // displayStats(statdelaville);
-        
                 
             })    
                 
