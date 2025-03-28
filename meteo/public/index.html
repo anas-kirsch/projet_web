@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Manrope:wght@200..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="icon" href="./image/icons8-rain-64.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
 
     <link rel="stylesheet" href="../src/style/style.css">
     <title>Direct Météo</title>
@@ -17,6 +19,7 @@
     
     <header>
 
+
         <section class="container-presentation">
             
             <h1>Direct <span class="style-texte-meteo">Météo</span> </h1>
@@ -24,20 +27,16 @@
         
         </section>
         <section class="container-barrederecherche">
-            <!-- <div class="div-barrederecherche"> -->
-                <form action="" class="div-barrederecherche">
+                <div  class="div-barrederecherche">
 
                     
                     <input class="barrederecherche" type="text" placeholder="Entrez une ville ou des coordonnées">
                     <button class="validelarecherche" type="click" >Rechercher</button>
-                </form>
-            <!-- </div> -->
+                </div>
         </section>
 
-        <!-- <section class="template-container"> -->
             <div class="div-proposition-recherche">
             </div>
-        <!-- </section> -->
             <template class="template-recherche">
                     <p class="texte-proposition"></p> 
                 
@@ -49,15 +48,70 @@
         <section class="container-meteo-direct">
             <p class="ville-localisation"></p>
             <p class="temperature"></p>
-            <p class="temps"></p>
+            <div class="container-temps">
+                <p class="temps"></p>
+                <img class="cloudCover" src="" alt="">
+            </div>
 
+            <div class="container-temps">
+                <p class="precipitation"></p>
+                <img class="precipitationImg" src="" alt="">
+            </div>
+            <div class="container-temps">
+                <p class="pressure"></p>
+                <img class="pressureImg" src="" alt="">
+            </div>
+            
+            <div class="container-temps">
+                <p class="humidity"></p>
+                <img class="humidityImg" src="" alt="">
+                
+            </div>
+
+            <div class="container-isday">
+                <img class="image-jour-nuit" src="" alt="">
+            </div>
+   
         </section>
 
-        <section>
-            <!-- <i class="fa fa-question" aria-hidden="true"></i> -->
+        <section class="accueil">
+            
+            
+        <div class="wrapper">
+            <div class="cloud">
+            <div class="cloud_left"></div>
+            <div class="cloud_right"></div>
+            </div>
+            <div class="rain">
+            <div class="drop"></div>
+            <div class="drop"></div>
+            <div class="drop"></div>
+            <div class="drop"></div>
+            <div class="drop"></div>
+            </div>
+            <div class="surface">
+            <div class="hit"></div>
+            <div class="hit"></div>
+            <div class="hit"></div>
+            <div class="hit"></div>
+            <div class="hit"></div>
+        </div>
+    </div>
+    
+    
         </section>
+</main>
+    <div class="container-close-info">
+        <i class="fa-solid fa-x" style="color: #ffffff;"></i>
+    </div>
 
-    </main>
+
+    <div class="container-infos">
+        <p class="p-info">Vos données sont récoltées afin de fournir différents services tels que la geolocalisation, elle ne sont ni stockées ni reutilisées.</p>
+        <p class="p-info">Si vous souhaitez des données météo sur un lieu plus précis vous pouvez entrer dans la barre de recherche les coordonnées de la LAT et la LONG : LAT=données LONG=données.</p>
+    </div>
+    
+
 
 
     <footer>

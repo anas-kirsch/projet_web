@@ -1,239 +1,339 @@
+@media screen and (max-width: 410px) {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
 
-body{
-    background-color:lightblue;
-    background: linear-gradient(135deg, #6dd5ed, #2193b0);
-    height: 100vh;
-    overflow: hidden;
-}
-
-
-
-
-@media screen and (max-width: 410px){
-
-
-    body{
-        background-color:lightblue;
-        background: linear-gradient(135deg, #6dd5ed, #2193b0);
-        height: 98vh;
-        overflow: hidden;
-
+    body {
+        background: linear-gradient(to bottom, #4facfe, #00f2fe);
+        min-height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        font-family: 'Poppins', sans-serif;
     }
 
-    /*section de presentation*/
-    .container-presentation{
+    body.active {
+        background: linear-gradient(135deg, #2a3046, #0d0e56);
+    }
+
+    /* Section de présentation */
+    .container-presentation {
         display: flex;
         flex-direction: column;
         align-items: center;
+        /* padding: 20px 0; */
     }
 
-    h1{
-        font-size: 1.5rem;
-        font-family: "roboto";
+    h1 {
+        font-size: 1.8rem;
+        font-family: 'Poppins', sans-serif;
         color: white;
-        letter-spacing:2px;
-
-        margin: 15px 0px 0px 0px;
-
+        letter-spacing: 2px;
+        margin: 15px 0 5px;
+        font-weight: 600;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
-    .style-texte-meteo{
+    .style-texte-meteo {
         text-transform: uppercase;
         color: #ff6f61;
+        font-weight: 700;
     }
 
-    
-    .slogan{
-        font-size: 1.2rem;
-        font-family: "roboto";
+    .slogan {
+        font-size: 1.3rem;
+        font-family: 'Roboto', sans-serif;
         color: white;
-        letter-spacing:1px;
-        font-weight: bold;
-        margin: 10px 0px 20px 0px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        margin: 10px 0 25px;
     }
 
-    /*container barre de recherche*/
-    
-    .container-barrederecherche{
+    /* Barre de recherche */
+    .container-barrederecherche {
         display: flex;
-        align-items: center;
         justify-content: center;
-        height: 5vh;
+        padding: 0 20px;
+        margin-bottom: 20px;
     }
-    
-    .div-barrederecherche{
-       width: 100%;
-       height: 100%;
-       display: flex;
-        justify-content: center;
+
+    .div-barrederecherche {
+        width: 100%;
+        max-width: 350px;
         display: grid;
-        grid-template-columns: 75% 25%;    
-
+        grid-template-columns: 75% 25%;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        overflow: hidden;
     }
 
-
-    .barrederecherche{
+    .barrederecherche {
         outline: none;
         border: none;
-        border-radius: 5px 0px 0px 5px;
-        padding: 0px 0px 0px 10px;
-        cursor: pointer;
+        padding: 12px 15px;
+        border-radius: 10px 0px 0px 10px;
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
     }
 
-
-    .validelarecherche{
+    .validelarecherche {
         border: none;
-        border-radius: 0px 5px 5px 0px;
         background-color: #ff6f61;
         color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        transition: all 0.3s ease;
         cursor: pointer;
-        opacity: 0.9;
-        transition: 0.3s;
-
     }
-    .validelarecherche:hover{
-        opacity: 1;
+
+    .validelarecherche:hover {
         background: #ff4a3d;
     }
 
-
-    main{
-        height: 75vh;
-    }
-
-    /*container meteo en direct*/
-
-    .container-meteo-direct{
+    /* Conteneur météo principal */
+    .container-meteo-direct {
         display: flex;
         flex-direction: column;
         align-items: center;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 20px;
+        margin: 20px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        border: 1px solid rgba(255,255,255,0.18);
+        gap: 20px;
     }
 
-    .ville-localisation{
+    .container-meteo-direct.active {
+        background: rgba(46, 49, 85, 0.7);
+        border: 1px solid #ff6f61;
+    }
+
+    .ville-localisation {
         color: white;
-        font-family: "roboto";
-        font-weight: bold;
-        letter-spacing: 2px;
-        font-size: 1.8rem;
-        margin: 20px 0px 0px 0px ;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1.6rem;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .temperature {
+        font-family: 'Poppins', sans-serif;
+        font-size: 5rem;
+        color: white;
+        /* margin: 10px 0; */
+        margin: -15px 0 0px;
+        font-weight: 700;
+        text-shadow: 0 0 10px rgba(255,255,255,0.3);
+    }
+
+    /* Cartes de données météo */
+    .container-temps {
+        background: rgba(255, 255, 255, 0.2);
+        height: 70px;
+        width: 90%;
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        transition: all 0.3s;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .container-temps:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    .container-temps.active {
+        /* background: linear-gradient(135deg, rgba(42, 48, 70, 0.7), rgba(13, 14, 86, 0.7)); */
+       background: linear-gradient(135deg, rgba(78, 89, 131, 0.7), rgba(13, 14, 86, 0.7));
+    }
+
+    .temps, .precipitation, .pressure, .humidity {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: white;
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    /* Icônes */
+    .cloudCover, .precipitationImg, .pressureImg, .humidityImg {
+        height: 40px;
+        width: 40px;
+        filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+        transition: all 0.3s ease;
+    }
+
+    .cloudCover.active, .precipitationImg.active, 
+    .pressureImg.active, .humidityImg.active {
+        display: block;
+    }
+
+    /* Section source */
+    .container-source {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .source-data {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.9rem;
+    }
+
+    .source-titre {
+        color: #ff6f61;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .source-titre:hover {
+        color: #ff4a3d;
+        text-decoration: underline;
+    }
+
+    /* Suggestions de recherche */
+    .div-proposition-recherche {
+        background: white;
+        max-height: 200px;
+        overflow-y: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        position: absolute;
+        width: 65%;
+        z-index: 100;
+        display: none;
+        left: 28px;
+        top: 175px;
+    }
+
+    .div-proposition-recherche.active {
+        display: block;
+        
+    }
+
+
+    .texte-proposition {
+        font-family: 'Roboto', sans-serif;
+        padding: 12px 15px;
+        margin: 0;
+        border-bottom: 1px solid #eee;
+        transition: all 0.2s ease;
+    }
+
+    .texte-proposition:hover {
+        background-color: #ff6f61;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Icône d'information */
+    .fa-circle-info {
+        color: white;
+        font-size: 24px;
+        transition: all 0.5s ease;
+    }
+
+    .fa-circle-info:hover {
+        color: #ff6f61;
+        transform: rotate(360deg);
 
     }
 
-    .temperature{
-        font-family: "roboto";
-        font-size: 4rem;
+    .container-close-info{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+
+        /* position: absolute;
+        left: 45%;       
+        top: 120%; */
+    }
+    
+
+    
+    
+    .fa-x{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #4facfe;;
+        border: 2px solid;
+
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        font-size: 25px;
+        transition: 0.3s;
+
+        z-index: 1000;
+
+        display: none;
+
+    }
+    .fa-x:hover{
+        background-color:#ff6f61;
+    }
+    .fa-x.active{
+        display: flex;
+    }
+    
+    
+    
+
+    .container-infos{
+        height: 27vh;
+        padding:10px;
+        margin: 0px 20px 0px 20px;
+
+        background-color:#4facfe;
+        border-radius: 10px;
+
         color: white;
-        margin: 15px 0px 0px 0px ;
+        font-weight: 500;    
+        
+        display: none;
+        flex-direction: column;
+        text-align: center;
+
+        
+        
+    }
+    .container-infos.active{
+        display: flex;
 
     }
 
-    .temps{
-        font-family: "roboto";
-        font-size: 1.5rem;
-        color: white;
+
+    .p-info{
         margin: 10px 0px 0px 0px ;
     }
 
 
 
-
-    .container-source{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2vh;
-    }
-
-    .source-data{
-        color: white;
-        font-family: "roboto";
-        /* font-weight: bold; */
-    }
-
-    .source-titre{
-        color: #ff6f61;
-        transition: 0.3s;
-        cursor: pointer;
-    }
-    .source-titre:hover{
-        color: #ff4a3d;
-        opacity: 1;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*faq*/
-
-    .fa-circle-info{
-        color: white;
-        font-size: 4vh;
-    }
-
-
-
-    .div-proposition-recherche{
-        background-color: white;
-        max-height: 20vh;
-        overflow: scroll;
-        display: flex;
-        /* align-items: center; */
-        /* padding-left: 10px; */
-        /* border-radius: 5px; */
-        border: 1px solid  #ff6f61;
-        display: flex;
-        flex-direction: column;
-        
-
-        
-
-        display: none;
-        position: absolute;
-        width: 72%;
-        /* z-index: 100; */
-
-    }
-    .div-proposition-recherche.active{
-        display: block;
-    }
-
-    .texte-proposition{
-        font-family: "roboto";
-        margin: 0px;
-        /* border: 1px  #ff6f61 solid ; */
-        /* padding-left: 10px; */
-        padding: 10px 10px 10px 10px;
-    }
-
-    .texte-proposition:hover{
-        background-color: #ff6f61;
-        cursor: pointer;
-    }
-
-
-
-
-    .messageErreur{
-        font-family: "roboto";
-        margin: 0px;
-        /* border: 1px  #ff6f61 solid ; */
-        /* padding-left: 10px; */
-        padding: 10px 10px 10px 10px;
-        /* height: 5vh; */
-    }
-
-    .messageErreur.active{
-        display: none;
-    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
