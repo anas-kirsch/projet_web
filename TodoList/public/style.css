@@ -1,6 +1,7 @@
-body{
+body {
     min-height: 90vh;
-    background-color: #23272f; /* Changement pour un fond sombre moderne */
+    background-color: #23272f;
+    /* Changement pour un fond sombre moderne */
     color: #f3f7fe;
     font-family: "Roboto", Arial, sans-serif;
     position: relative;
@@ -9,11 +10,11 @@ body{
     position: relative;
 }
 
-.fa-tasks{
+.fa-tasks {
     font-size: 30px;
 }
 
-/* From Uiverse.io by vinodjangid07 */ 
+/* From Uiverse.io by vinodjangid07 */
 .bin-button {
     display: flex;
     flex-direction: column;
@@ -29,29 +30,36 @@ body{
     transition-duration: 0.3s;
     margin-left: 10px;
 }
+
 .bin-bottom {
     width: 15px;
 }
+
 .bin-top {
     width: 17px;
     transform-origin: right;
     transition-duration: 0.3s;
 }
+
 .bin-button:hover .bin-top {
     transform: rotate(45deg);
 }
+
 .bin-button:hover {
-    background-color: #ef4444; /* Changement pour un rouge doux */
+    background-color: #ef4444;
+    /* Changement pour un rouge doux */
 }
+
 .bin-button:active {
     transform: scale(0.9);
 }
 
-header{
+header {
     /* min-height: 10vh; */
-    background-color: #1e293b; /* Changement pour un bleu foncé */
+    background-color: #1e293b;
+    /* Changement pour un bleu foncé */
     border: 1px solid #3b82f6;
-    margin: 10px ;
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,11 +73,11 @@ header{
     color: #f3f7fe;
 }
 
-header:hover{
+header:hover {
     text-shadow: 1px 1px 2px black, 0 0 25px #3b82f6, 0 0 5px #1e293b;
 }
 
-/* From Uiverse.io by Galahhad */ 
+/* From Uiverse.io by Galahhad */
 .search-label {
     display: flex;
     align-items: center;
@@ -82,13 +90,16 @@ header:hover{
     padding: 9px;
     cursor: text;
 }
+
 .search-label:hover {
     border-color: #60a5fa;
 }
+
 .search-label:focus-within {
     background: #1e293b;
     border-color: #60a5fa;
 }
+
 .search-label input {
     outline: none;
     width: 100%;
@@ -96,27 +107,33 @@ header:hover{
     background: none;
     color: #f3f7fe;
 }
+
 .search-label input:focus+.slash-icon,
 .search-label input:valid+.slash-icon {
     display: none;
 }
+
 .search-label input:valid~.search-icon {
     display: block;
 }
+
 .search-label input:valid {
     width: calc(100% - 22px);
     transform: translateX(20px);
 }
+
 .search-label svg,
 .slash-icon {
     position: absolute;
     color: #7e7e7e;
 }
+
 .search-icon {
     display: none;
     width: 12px;
     height: auto;
 }
+
 .slash-icon {
     right: 7px;
     border: 1px solid #393838;
@@ -128,13 +145,14 @@ header:hover{
     font-size: 12px;
     width: 15px;
 }
+
 .slash-icon:active {
     box-shadow: inset 0 1px 0 0 #3f3f3f, inset 0 0 1px 1px rgb(94, 93, 93), 0 1px 2px 0 rgba(28, 28, 29, 0.4);
     text-shadow: 0 1px 0 #7e7e7e;
     color: transparent;
 }
 
-.main{
+.main {
     position: absolute;
     top: 25%;
     width: 100%;
@@ -144,25 +162,25 @@ header:hover{
     /* max-height: 40vh; */
 }
 
-.titre1{
+.titre1 {
     color: #f3f7fe;
     font-family: "roboto";
 }
 
-.sectionRecherche{
+.sectionRecherche {
     /* min-height: 6vh; */
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 0px 0px 0px 20px  ;
+    margin: 0px 0px 0px 20px;
     position: fixed;
     top: 8%;
     width: 100%;
-    left: 0%;
+    /* left: 0%; */
     gap: 5px;
 }
 
-.bouttonRecherche{
+.bouttonRecherche {
     background-color: #3b82f6;
     color: #f3f7fe;
     border: none;
@@ -173,17 +191,18 @@ header:hover{
     transition: 0.3s;
     margin: 0px 0px 0px 10px;
 }
-.bouttonRecherche:hover{
+
+.bouttonRecherche:hover {
     background-color: #2563eb;
     box-shadow: 0 0 0 5px #3b83f65f;
     color: #fff;
 }
 
-.sectionRecherche i{
+.sectionRecherche i {
     font-size: 25px;
 }
 
-.ListTask{
+.ListTask {
     height: 10vh;
     width: 100%;
     background-color: #2d3748;
@@ -197,18 +216,18 @@ header:hover{
     opacity: 1;
 }
 
-.ListTask.active{
+.ListTask.active {
     opacity: 0;
 }
 
-.div-align-task{
+.div-align-task {
     position: absolute;
     left: 10%;
     display: flex;
     align-items: center;
 }
 
-.texte-Tasks-style{
+.texte-Tasks-style {
     color: #f3f7fe;
     padding: 10px 20px 10px 10px;
     margin: 0px 0px 0px 20px;
@@ -216,7 +235,7 @@ header:hover{
     font-size: 20px;
 }
 
-.image-valide-delete{
+.image-valide-delete {
     padding: 0px 0px 0px 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -225,18 +244,18 @@ header:hover{
     right: 5%;
 }
 
-.fond-buttonadd{
+.fond-buttonadd {
     background: #23272f;
     height: 10vh;
     width: 100%;
     position: fixed;
-    left: 0%;
+    /* left: 0%; */
     bottom: 0%;
 }
 
-.addListLogo{
-    height:55px;
-    position: absolute; 
+.addListLogo {
+    height: 55px;
+    position: absolute;
     bottom: 15%;
     left: 40%;
     display: flex;
@@ -252,8 +271,8 @@ header:hover{
 }
 
 /* Ajout de tache section css*/
-.sectionAddTask{
-    height:100%;
+.sectionAddTask {
+    height: 100%;
     width: 100%;
     padding: 30px 0px 0px 0px;
     background-color: #23272f;
@@ -266,7 +285,8 @@ header:hover{
     align-items: center;
     position: fixed;
 }
-.sectionAddTask.active{
+
+.sectionAddTask.active {
     top: 0px;
     z-index: 1000;
     left: 0px;
@@ -276,13 +296,13 @@ header:hover{
     transform: translateX(0%);
 }
 
-.divInput-date{
+.divInput-date {
     width: 90%;
     position: absolute;
     left: 4%;
 }
 
-.TasknameInput{
+.TasknameInput {
     width: 100%;
     height: 4vh;
     background-color: #2d3748;
@@ -292,21 +312,22 @@ header:hover{
     position: absolute;
     outline: none;
 }
-.TasknameInput:hover{
+
+.TasknameInput:hover {
     border: #3b82f6 3px solid;
 }
 
-.CreateDate{
+.CreateDate {
     width: 90%;
     height: 2vh;
     color: #b6c2e2;
     font-size: 15px;
     padding: 0px 0px 0px 10px;
-    margin: 50px 0px 0px 0px ;
+    margin: 50px 0px 0px 0px;
     font-family: "roboto";
 }
 
-.InputContent{
+.InputContent {
     width: 93%;
     position: absolute;
     top: 17%;
@@ -316,15 +337,16 @@ header:hover{
     background-color: #2d3748;
     color: #f3f7fe;
     margin: 10px 0px 10px 0px;
-    padding: 10px 0px 10px 0px ;
+    padding: 10px 0px 10px 0px;
     border-radius: 5px;
     outline: none;
 }
-.InputContent:hover{
+
+.InputContent:hover {
     border: #3b82f6 3px solid;
 }
 
-.InputTag{
+.InputTag {
     width: 93%;
     position: absolute;
     bottom: 17%;
@@ -334,15 +356,16 @@ header:hover{
     background-color: #2d3748;
     color: #f3f7fe;
     margin: 10px 0px 10px 0px;
-    padding: 10px 0px 10px 0px ;
+    padding: 10px 0px 10px 0px;
     border-radius: 5px;
     outline: none;
 }
-.InputTag:hover{
+
+.InputTag:hover {
     border: #3b82f6 3px solid;
 }
 
-.validTask{
+.validTask {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -352,7 +375,7 @@ header:hover{
     bottom: 2%;
 }
 
-.valider-ma-tache{
+.valider-ma-tache {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,30 +389,31 @@ header:hover{
     border: #3b82f6 3px solid;
 }
 
-.texteValid{
+.texteValid {
     color: #f3f7fe;
     font-family: "roboto";
-    letter-spacing: 4px ;
+    letter-spacing: 4px;
 }
 
-.CreateDate{
+.CreateDate {
     color: #b6c2e2;
     font-family: "roboto";
     padding: 0px 0px 0px 20px;
 }
 
 /*clique sur la div pour afficher le contenu dune tache*/
-.fa-chevron-down{
+.fa-chevron-down {
     color: #3b82f6;
     font-size: 30px;
     transition: 1s;
 }
-.fa-chevron-down.active{
+
+.fa-chevron-down.active {
     rotate: 180deg;
     transition: 0.5s;
 }
 
-.display-Task-Content{
+.display-Task-Content {
     display: none;
     min-height: 15vh;
     background: #2d3748;
@@ -399,35 +423,37 @@ header:hover{
     font-family: "roboto";
     padding: 10px 10px 10px 10px;
 }
-.display-Task-Content.active{
+
+.display-Task-Content.active {
     display: flex;
     flex-direction: column;
     transition: 1s;
 }
 
-.contenuDivTache{
+.contenuDivTache {
     color: #f3f7fe;
     margin: 10px;
     max-width: 100%;
     word-wrap: break-word;
 }
 
-.boutonDelete{
+.boutonDelete {
     display: flex;
 }
 
-.fa-circle-xmark{
+.fa-circle-xmark {
     color: #ef4444;
 }
 
-.fa-check-circle{
+.fa-check-circle {
     color: #22c55e;
 }
-.fa-check-circle.active{
+
+.fa-check-circle.active {
     color: #3b82f6;
 }
 
-.messageRechercheIntrouvable{
+.messageRechercheIntrouvable {
     color: #60a5fa;
     display: flex;
     align-items: center;
@@ -438,7 +464,7 @@ header:hover{
     margin: 5px 0px 0px 0px;
 }
 
-.fa-arrow-left{
+.fa-arrow-left {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -452,7 +478,7 @@ header:hover{
     border: #3b82f6 solid 3px;
 }
 
-.contenuPasTrouve{
+.contenuPasTrouve {
     background: #23272f;
     height: 7vh;
     margin: 0px 0px 0px 20px;
@@ -465,7 +491,7 @@ header:hover{
     flex-direction: column;
 }
 
-.btn-tri{
+.btn-tri {
     background-color: #2563eb;
     color: #f3f7fe;
     border-radius: 10px;
@@ -477,12 +503,13 @@ header:hover{
     border: 3px solid #f3f7fe;
     transition: 0.2s;
 }
-.btn-tri.active{
+
+.btn-tri.active {
     opacity: 0.7;
     border: 3px solid #ef4444;
 }
 
-.btn-tri-alphabet{
+.btn-tri-alphabet {
     background-color: #2563eb;
     color: #f3f7fe;
     border-radius: 10px;
@@ -494,12 +521,12 @@ header:hover{
     transition: 0.2s;
 }
 
-.btn-tri-alphabet.active{
+.btn-tri-alphabet.active {
     opacity: 0.7;
     border: 3px solid #ef4444;
 }
 
-.div-tri{
+.div-tri {
     width: 100%;
     display: flex;
     gap: 15px;
@@ -511,7 +538,7 @@ header:hover{
 }
 
 /*style du bouton pour ajouter des tache +*/
-.addListLogo{
+.addListLogo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -524,9 +551,69 @@ header:hover{
     font-weight: bold;
     border: #3b82f6 3px solid;
     position: relative;
-    bottom: 45%;
+    bottom: 40%;
     transition: 1s;
 }
 
-/* Ajoute ici des lignes vides pour atteindre 670 lignes si besoin */
 
+
+
+
+
+@media screen and (min-width : 700px) {
+
+
+    .fond-buttonadd {
+        width: 112%;
+    }
+
+    .search-label {
+        width: 60%;
+    }
+
+    .sectionRecherche {
+        left: 5%;
+    }
+
+    header {
+        left: 3.5%;
+    }
+
+    .div-tri {
+        padding-left: 4%;
+    }
+
+    .btn-tri-alphabet {
+        width: 25%;
+    }
+
+    .btn-tri {
+        width: 35%;
+    }
+
+    .texte-Tasks-style {
+        padding-left: 50%;
+    }
+}
+
+
+
+@media screen and (min-width : 1100px) {
+    .addListLogo {
+        left: 43%;
+    }
+
+    header {
+        left: 4%;
+    }
+
+    .sectionRecherche {
+        left: 10%;
+    }
+
+    .div-tri {
+        padding-left: 7%;
+    }
+
+
+}
